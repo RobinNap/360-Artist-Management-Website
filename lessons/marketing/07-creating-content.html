@@ -37,29 +37,87 @@
         <a href="../../index.html#about" class="mobile-link">About</a>
     </div>
 
-    <main class="article-page">
-        <div class="article-hero">
-            <div class="breadcrumb">
-                <a href="../../index.html">Home</a>
-                <span>/</span>
-                <a href="../../modules/marketing.html">Marketing</a>
-                <span>/</span>
-                <span class="current">Creating Content</span>
-            </div>
-            <div class="article-hero-content">
-                <div class="module-hero-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23,6 13.5,15.5 8.5,10.5 1,18"/><polyline points="17,6 23,6 23,12"/></svg>
-                </div>
-                <div class="article-hero-text">
-                    <span class="article-module-tag">Marketing</span>
-                    <h1>Creating Content</h1>
-                    <p class="article-description">Develop content that engages your audience.</p>
-                </div>
-            </div>
-        </div>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle chapter list">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+    </button>
 
-        <article class="article-content">
-            <p class="article-intro">Content keeps you connected with your audience between releases. The good news: you don't need expensive equipment—your smartphone is enough.</p><h2>Content Ideas</h2><div class="content-grid">
+    <main class="article-page">
+        <div class="article-layout">
+            
+        <aside class="chapter-sidebar">
+            <div class="sidebar-header">
+                <a href="../../modules/marketing.html" class="sidebar-module-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Marketing
+                </a>
+            </div>
+            
+            <nav class="chapter-list">
+                
+            <a href="01-what-is-marketing.html" class="chapter-item  completed">
+                <span class="chapter-number">01</span>
+                <span class="chapter-title">What is Marketing?</span>
+            </a>
+            <a href="02-newsworthiness.html" class="chapter-item  completed">
+                <span class="chapter-number">02</span>
+                <span class="chapter-title">Newsworthiness</span>
+            </a>
+            <a href="03-reaching-out.html" class="chapter-item  completed">
+                <span class="chapter-number">03</span>
+                <span class="chapter-title">Reaching Out</span>
+            </a>
+            <a href="04-press-release.html" class="chapter-item  completed">
+                <span class="chapter-number">04</span>
+                <span class="chapter-title">Writing a Press Release</span>
+            </a>
+            <a href="05-newsletter.html" class="chapter-item  completed">
+                <span class="chapter-number">05</span>
+                <span class="chapter-title">Writing a Newsletter</span>
+            </a>
+            <a href="06-storytelling.html" class="chapter-item  completed">
+                <span class="chapter-number">06</span>
+                <span class="chapter-title">Storytelling</span>
+            </a>
+            <a href="07-creating-content.html" class="chapter-item active ">
+                <span class="chapter-number">07</span>
+                <span class="chapter-title">Creating Content</span>
+            </a>
+            <a href="08-control-content.html" class="chapter-item  ">
+                <span class="chapter-number">08</span>
+                <span class="chapter-title">Control Your Content</span>
+            </a>
+            </nav>
+        </aside>
+            
+            <div class="article-main">
+                <div class="article-hero">
+                    <div class="breadcrumb">
+                        <a href="../../index.html">Home</a>
+                        <span>/</span>
+                        <a href="../../modules/marketing.html">Marketing</a>
+                        <span>/</span>
+                        <span class="current">Creating Content</span>
+                    </div>
+                    <div class="article-hero-content">
+                        <div class="module-hero-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23,6 13.5,15.5 8.5,10.5 1,18"/><polyline points="17,6 23,6 23,12"/></svg>
+                        </div>
+                        <div class="article-hero-text">
+                            <span class="article-module-tag">Marketing</span>
+                            <h1>Creating Content</h1>
+                            <p class="article-description">Develop content that engages your audience.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <article class="article-content">
+                    <p class="article-intro">Content keeps you connected with your audience between releases. The good news: you don't need expensive equipment—your smartphone is enough.</p><h2>Content Ideas</h2><div class="content-grid">
             <div class="content-grid-item">
                 <span class="grid-icon">🎬</span>
                 <h4>Behind the Scenes</h4>
@@ -91,27 +149,44 @@
             <div class="callout-icon">💡</div>
             <div class="callout-content"><p>Consistency beats perfection. Better to post regularly with good content than to wait for the perfect shot.</p></div>
         </div>
-        </article>
+                </article>
 
-        <nav class="article-navigation">
-            <a href="06-storytelling.html" class="article-nav-link prev">
+                
+        <section class="continue-reading">
+            <a href="08-control-content.html" class="continue-card">
+                <div class="continue-content">
+                    <div class="continue-label">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        Up Next
+                    </div>
+                    <div class="continue-title">Control Your Content</div>
+                    <div class="continue-description">Manage your content strategy effectively.</div>
+                </div>
+                <div class="continue-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </div>
+            </a>
+        </section>
+
+                <nav class="article-navigation">
+                    <a href="06-storytelling.html" class="article-nav-link prev">
             <span class="nav-direction">Previous</span>
             <span class="nav-title">Storytelling</span>
         </a>
-            <a href="08-control-content.html" class="article-nav-link next">
+                    <a href="08-control-content.html" class="article-nav-link next">
             <span class="nav-direction">Next</span>
             <span class="nav-title">Control Your Content</span>
         </a>
-        </nav>
+                </nav>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-brand">
-                <span class="logo-360">360°</span>
-                <span class="logo-text">Artist Management</span>
-            </div>
-            <p class="footer-text">Knowledge shared freely.</p>
+            <p class="footer-text">© 2025 360° Artist Management. All rights reserved.</p>
         </div>
     </footer>
 

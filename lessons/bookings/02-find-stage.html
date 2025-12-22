@@ -37,53 +37,136 @@
         <a href="../../index.html#about" class="mobile-link">About</a>
     </div>
 
-    <main class="article-page">
-        <div class="article-hero">
-            <div class="breadcrumb">
-                <a href="../../index.html">Home</a>
-                <span>/</span>
-                <a href="../../modules/bookings.html">Bookings</a>
-                <span>/</span>
-                <span class="current">Find Your Stage</span>
-            </div>
-            <div class="article-hero-content">
-                <div class="module-hero-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                </div>
-                <div class="article-hero-text">
-                    <span class="article-module-tag">Bookings</span>
-                    <h1>Find Your Stage</h1>
-                    <p class="article-description">Discover venues that match your style.</p>
-                </div>
-            </div>
-        </div>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle chapter list">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+    </button>
 
-        <article class="article-content">
-            <p class="article-intro">Not every venue is right for every artist. Finding venues that match your sound and style increases your chances of success and leads to better performances.</p><h2>Researching Venues</h2><ul class="content-list"><li>What genres do they typically book?</li><li>What's the crowd like?</li><li>What size audiences do they draw?</li><li>Who else has played there?</li><li>What's their reputation in the scene?</li></ul><div class="callout callout-tip">
+    <main class="article-page">
+        <div class="article-layout">
+            
+        <aside class="chapter-sidebar">
+            <div class="sidebar-header">
+                <a href="../../modules/bookings.html" class="sidebar-module-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Bookings
+                </a>
+            </div>
+            
+            <nav class="chapter-list">
+                
+            <a href="01-dj-type.html" class="chapter-item  completed">
+                <span class="chapter-number">01</span>
+                <span class="chapter-title">What Type of DJ Are You?</span>
+            </a>
+            <a href="02-find-stage.html" class="chapter-item active ">
+                <span class="chapter-number">02</span>
+                <span class="chapter-title">Find Your Stage</span>
+            </a>
+            <a href="03-booked-club.html" class="chapter-item  ">
+                <span class="chapter-number">03</span>
+                <span class="chapter-title">Getting Booked at a Club</span>
+            </a>
+            <a href="04-booked-festival.html" class="chapter-item  ">
+                <span class="chapter-number">04</span>
+                <span class="chapter-title">Getting Booked at a Festival</span>
+            </a>
+            <a href="05-write-booker.html" class="chapter-item  ">
+                <span class="chapter-number">05</span>
+                <span class="chapter-title">How To Write A Booker</span>
+            </a>
+            <a href="06-riders.html" class="chapter-item  ">
+                <span class="chapter-number">06</span>
+                <span class="chapter-title">Build Your Riders</span>
+            </a>
+            <a href="07-setlist.html" class="chapter-item  ">
+                <span class="chapter-number">07</span>
+                <span class="chapter-title">Create a Setlist</span>
+            </a>
+            <a href="08-booking-info.html" class="chapter-item  ">
+                <span class="chapter-number">08</span>
+                <span class="chapter-title">Track Booking Information</span>
+            </a>
+            <a href="09-prepare-performance.html" class="chapter-item  ">
+                <span class="chapter-number">09</span>
+                <span class="chapter-title">Preparing Your Performance</span>
+            </a>
+            <a href="10-lasting-impression.html" class="chapter-item  ">
+                <span class="chapter-number">10</span>
+                <span class="chapter-title">Making a Lasting Impression</span>
+            </a>
+            </nav>
+        </aside>
+            
+            <div class="article-main">
+                <div class="article-hero">
+                    <div class="breadcrumb">
+                        <a href="../../index.html">Home</a>
+                        <span>/</span>
+                        <a href="../../modules/bookings.html">Bookings</a>
+                        <span>/</span>
+                        <span class="current">Find Your Stage</span>
+                    </div>
+                    <div class="article-hero-content">
+                        <div class="module-hero-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                        </div>
+                        <div class="article-hero-text">
+                            <span class="article-module-tag">Bookings</span>
+                            <h1>Find Your Stage</h1>
+                            <p class="article-description">Discover venues that match your style.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <article class="article-content">
+                    <p class="article-intro">Not every venue is right for every artist. Finding venues that match your sound and style increases your chances of success and leads to better performances.</p><h2>Researching Venues</h2><ul class="content-list"><li>What genres do they typically book?</li><li>What's the crowd like?</li><li>What size audiences do they draw?</li><li>Who else has played there?</li><li>What's their reputation in the scene?</li></ul><div class="callout callout-tip">
             <div class="callout-icon">💡</div>
             <div class="callout-content"><p>Visit venues as a guest first. Understand the vibe, the crowd, and the sound before approaching for bookings.</p></div>
         </div>
-        </article>
+                </article>
 
-        <nav class="article-navigation">
-            <a href="01-dj-type.html" class="article-nav-link prev">
+                
+        <section class="continue-reading">
+            <a href="03-booked-club.html" class="continue-card">
+                <div class="continue-content">
+                    <div class="continue-label">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        Up Next
+                    </div>
+                    <div class="continue-title">Getting Booked at a Club</div>
+                    <div class="continue-description">Strategies for landing club bookings.</div>
+                </div>
+                <div class="continue-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </div>
+            </a>
+        </section>
+
+                <nav class="article-navigation">
+                    <a href="01-dj-type.html" class="article-nav-link prev">
             <span class="nav-direction">Previous</span>
             <span class="nav-title">What Type of DJ Are You?</span>
         </a>
-            <a href="03-booked-club.html" class="article-nav-link next">
+                    <a href="03-booked-club.html" class="article-nav-link next">
             <span class="nav-direction">Next</span>
             <span class="nav-title">Getting Booked at a Club</span>
         </a>
-        </nav>
+                </nav>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-brand">
-                <span class="logo-360">360°</span>
-                <span class="logo-text">Artist Management</span>
-            </div>
-            <p class="footer-text">Knowledge shared freely.</p>
+            <p class="footer-text">© 2025 360° Artist Management. All rights reserved.</p>
         </div>
     </footer>
 

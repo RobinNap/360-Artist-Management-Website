@@ -1,6 +1,6 @@
 /**
  * 360° Artist Management - Knowledge Base
- * Simple UI interactions
+ * Enhanced UI interactions with article navigation
  */
 
 // Mobile Menu Toggle
@@ -51,4 +51,82 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.1 });
     
     animatedElements.forEach(el => observer.observe(el));
+});
+
+// ============================================
+// Article Navigation Enhancements
+// ============================================
+
+// Sidebar Toggle (Mobile)
+const sidebarToggle = document.getElementById('sidebarToggle');
+const chapterSidebar = document.querySelector('.chapter-sidebar');
+const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+if (sidebarToggle && chapterSidebar && sidebarOverlay) {
+    sidebarToggle.addEventListener('click', () => {
+        chapterSidebar.classList.toggle('active');
+        sidebarOverlay.classList.toggle('active');
+        document.body.style.overflow = chapterSidebar.classList.contains('active') ? 'hidden' : '';
+    });
+
+    sidebarOverlay.addEventListener('click', () => {
+        chapterSidebar.classList.remove('active');
+        sidebarOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+
+    // Close sidebar when clicking a chapter link (mobile)
+    chapterSidebar.querySelectorAll('.chapter-item').forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 1024) {
+                chapterSidebar.classList.remove('active');
+                sidebarOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    });
+}
+
+// Keyboard Navigation (Arrow Keys)
+document.addEventListener('keydown', (e) => {
+    // Don't trigger if user is typing in an input
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    
+    const prevLink = document.querySelector('.sidebar-nav-btn.prev, .article-nav-link.prev:not(.disabled)');
+    const nextLink = document.querySelector('.sidebar-nav-btn.next, .article-nav-link.next:not(.disabled)');
+    
+    if (e.key === 'ArrowLeft' && prevLink) {
+        e.preventDefault();
+        // Add visual feedback
+        prevLink.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+            window.location.href = prevLink.href;
+        }, 100);
+    }
+    
+    if (e.key === 'ArrowRight' && nextLink) {
+        e.preventDefault();
+        // Add visual feedback
+        nextLink.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+            window.location.href = nextLink.href;
+        }, 100);
+    }
+});
+
+// Smooth page transitions
+document.addEventListener('DOMContentLoaded', () => {
+    // Add loaded class for page entrance animation
+    document.body.classList.add('page-loaded');
+    
+    // Handle navigation clicks for smooth exit
+    const navigationLinks = document.querySelectorAll('.chapter-item, .sidebar-nav-btn, .sticky-nav-btn, .continue-card, .article-nav-link');
+    
+    navigationLinks.forEach(link => {
+        if (link.href && !link.href.startsWith('#')) {
+            link.addEventListener('click', (e) => {
+                // Allow normal navigation, the CSS will handle the transition
+            });
+        }
+    });
 });

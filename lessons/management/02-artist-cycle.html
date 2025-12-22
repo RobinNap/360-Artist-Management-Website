@@ -37,53 +37,112 @@
         <a href="../../index.html#about" class="mobile-link">About</a>
     </div>
 
-    <main class="article-page">
-        <div class="article-hero">
-            <div class="breadcrumb">
-                <a href="../../index.html">Home</a>
-                <span>/</span>
-                <a href="../../modules/management.html">Management</a>
-                <span>/</span>
-                <span class="current">The Artist Cycle</span>
-            </div>
-            <div class="article-hero-content">
-                <div class="module-hero-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                </div>
-                <div class="article-hero-text">
-                    <span class="article-module-tag">Management</span>
-                    <h1>The Artist Cycle</h1>
-                    <p class="article-description">Navigate the different phases of an artist's career.</p>
-                </div>
-            </div>
-        </div>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle chapter list">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+    </button>
 
-        <article class="article-content">
-            <p class="article-intro">Every artist career moves through predictable phases. Understanding where you are helps you focus on the right activities for your current stage.</p><h2>The Phases</h2><ul class="content-list"><li>Discovery: Building your sound and identity</li><li>Development: Growing your audience and skills</li><li>Establishment: Consistent releases and regular gigs</li><li>Expansion: Bigger venues, wider reach</li><li>Maturity: Legacy building and mentorship</li></ul><h2>Phase-Appropriate Activities</h2><p>Don't try to do everything at once. In the Discovery phase, focus on your music and brand. In Development, focus on building audience. Match your efforts to your phase.</p><div class="callout callout-tip">
+    <main class="article-page">
+        <div class="article-layout">
+            
+        <aside class="chapter-sidebar">
+            <div class="sidebar-header">
+                <a href="../../modules/management.html" class="sidebar-module-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Management
+                </a>
+            </div>
+            
+            <nav class="chapter-list">
+                
+            <a href="01-artist-dna.html" class="chapter-item  completed">
+                <span class="chapter-number">01</span>
+                <span class="chapter-title">Artist DNA</span>
+            </a>
+            <a href="02-artist-cycle.html" class="chapter-item active ">
+                <span class="chapter-number">02</span>
+                <span class="chapter-title">The Artist Cycle</span>
+            </a>
+            <a href="03-fan-journey.html" class="chapter-item  ">
+                <span class="chapter-number">03</span>
+                <span class="chapter-title">The Fan Journey</span>
+            </a>
+            <a href="04-building-network.html" class="chapter-item  ">
+                <span class="chapter-number">04</span>
+                <span class="chapter-title">Building Your Network</span>
+            </a>
+            </nav>
+        </aside>
+            
+            <div class="article-main">
+                <div class="article-hero">
+                    <div class="breadcrumb">
+                        <a href="../../index.html">Home</a>
+                        <span>/</span>
+                        <a href="../../modules/management.html">Management</a>
+                        <span>/</span>
+                        <span class="current">The Artist Cycle</span>
+                    </div>
+                    <div class="article-hero-content">
+                        <div class="module-hero-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <div class="article-hero-text">
+                            <span class="article-module-tag">Management</span>
+                            <h1>The Artist Cycle</h1>
+                            <p class="article-description">Navigate the different phases of an artist's career.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <article class="article-content">
+                    <p class="article-intro">Every artist career moves through predictable phases. Understanding where you are helps you focus on the right activities for your current stage.</p><h2>The Phases</h2><ul class="content-list"><li>Discovery: Building your sound and identity</li><li>Development: Growing your audience and skills</li><li>Establishment: Consistent releases and regular gigs</li><li>Expansion: Bigger venues, wider reach</li><li>Maturity: Legacy building and mentorship</li></ul><h2>Phase-Appropriate Activities</h2><p>Don't try to do everything at once. In the Discovery phase, focus on your music and brand. In Development, focus on building audience. Match your efforts to your phase.</p><div class="callout callout-tip">
             <div class="callout-icon">💡</div>
             <div class="callout-content"><p>Be honest about where you are. Trying to act like an established artist when you're still developing can actually slow your progress.</p></div>
         </div>
-        </article>
+                </article>
 
-        <nav class="article-navigation">
-            <a href="01-artist-dna.html" class="article-nav-link prev">
+                
+        <section class="continue-reading">
+            <a href="03-fan-journey.html" class="continue-card">
+                <div class="continue-content">
+                    <div class="continue-label">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        Up Next
+                    </div>
+                    <div class="continue-title">The Fan Journey</div>
+                    <div class="continue-description">Map how fans discover and engage with you.</div>
+                </div>
+                <div class="continue-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </div>
+            </a>
+        </section>
+
+                <nav class="article-navigation">
+                    <a href="01-artist-dna.html" class="article-nav-link prev">
             <span class="nav-direction">Previous</span>
             <span class="nav-title">Artist DNA</span>
         </a>
-            <a href="03-fan-journey.html" class="article-nav-link next">
+                    <a href="03-fan-journey.html" class="article-nav-link next">
             <span class="nav-direction">Next</span>
             <span class="nav-title">The Fan Journey</span>
         </a>
-        </nav>
+                </nav>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-brand">
-                <span class="logo-360">360°</span>
-                <span class="logo-text">Artist Management</span>
-            </div>
-            <p class="footer-text">Knowledge shared freely.</p>
+            <p class="footer-text">© 2025 360° Artist Management. All rights reserved.</p>
         </div>
     </footer>
 

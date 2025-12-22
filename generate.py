@@ -120,7 +120,46 @@ def generate_article_html(module_id, module, article, articles, article_index):
     for block in article['content']:
         content_html += render_content_block(block)
     
-    # Navigation
+    # Calculate progress
+    total_articles = len(articles)
+    current_position = article_index + 1
+    progress_percent = (current_position / total_articles) * 100
+    
+    # Build chapter list
+    chapter_list_html = ''
+    for i, art in enumerate(articles):
+        is_active = 'active' if i == article_index else ''
+        is_completed = 'completed' if i < article_index else ''
+        chapter_list_html += f'''
+            <a href="{art["slug"]}.html" class="chapter-item {is_active} {is_completed}">
+                <span class="chapter-number">{str(i + 1).zfill(2)}</span>
+                <span class="chapter-title">{art["title"]}</span>
+            </a>'''
+    
+    # Continue reading section
+    continue_section = ''
+    if article_index < len(articles) - 1:
+        next_article = articles[article_index + 1]
+        continue_section = f'''
+        <section class="continue-reading">
+            <a href="{next_article["slug"]}.html" class="continue-card">
+                <div class="continue-content">
+                    <div class="continue-label">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        Up Next
+                    </div>
+                    <div class="continue-title">{next_article["title"]}</div>
+                    <div class="continue-description">{next_article["description"]}</div>
+                </div>
+                <div class="continue-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </div>
+            </a>
+        </section>'''
+    
+    # Inline article navigation
     prev_link = ''
     next_link = ''
     
@@ -183,44 +222,70 @@ def generate_article_html(module_id, module, article, articles, article_index):
         <a href="../../index.html#about" class="mobile-link">About</a>
     </div>
 
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle chapter list">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+    </button>
+
     <main class="article-page">
-        <div class="article-hero">
-            <div class="breadcrumb">
-                <a href="../../index.html">Home</a>
-                <span>/</span>
-                <a href="../../modules/{module_id}.html">{module["title"]}</a>
-                <span>/</span>
-                <span class="current">{article["title"]}</span>
+        <div class="article-layout">
+            
+        <aside class="chapter-sidebar">
+            <div class="sidebar-header">
+                <a href="../../modules/{module_id}.html" class="sidebar-module-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    {module["title"]}
+                </a>
             </div>
-            <div class="article-hero-content">
-                <div class="module-hero-icon">
-                    {icon_svg}
+            
+            <nav class="chapter-list">
+                {chapter_list_html}
+            </nav>
+        </aside>
+            
+            <div class="article-main">
+                <div class="article-hero">
+                    <div class="breadcrumb">
+                        <a href="../../index.html">Home</a>
+                        <span>/</span>
+                        <a href="../../modules/{module_id}.html">{module["title"]}</a>
+                        <span>/</span>
+                        <span class="current">{article["title"]}</span>
+                    </div>
+                    <div class="article-hero-content">
+                        <div class="module-hero-icon">
+                            {icon_svg}
+                        </div>
+                        <div class="article-hero-text">
+                            <span class="article-module-tag">{module["title"]}</span>
+                            <h1>{article["title"]}</h1>
+                            <p class="article-description">{article["description"]}</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="article-hero-text">
-                    <span class="article-module-tag">{module["title"]}</span>
-                    <h1>{article["title"]}</h1>
-                    <p class="article-description">{article["description"]}</p>
-                </div>
+
+                <article class="article-content">
+                    {content_html}
+                </article>
+
+                {continue_section}
+
+                <nav class="article-navigation">
+                    {prev_link}
+                    {next_link}
+                </nav>
             </div>
         </div>
-
-        <article class="article-content">
-            {content_html}
-        </article>
-
-        <nav class="article-navigation">
-            {prev_link}
-            {next_link}
-        </nav>
     </main>
 
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-brand">
-                <span class="logo-360">360°</span>
-                <span class="logo-text">Artist Management</span>
-            </div>
-            <p class="footer-text">Knowledge shared freely.</p>
+            <p class="footer-text">© 2025 360° Artist Management. All rights reserved.</p>
         </div>
     </footer>
 
@@ -318,11 +383,7 @@ def generate_module_html(module_id, module):
 
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-brand">
-                <span class="logo-360">360°</span>
-                <span class="logo-text">Artist Management</span>
-            </div>
-            <p class="footer-text">Knowledge shared freely.</p>
+            <p class="footer-text">© 2025 360° Artist Management. All rights reserved.</p>
         </div>
     </footer>
 

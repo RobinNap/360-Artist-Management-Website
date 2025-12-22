@@ -980,7 +980,7 @@ body {
 
 /* Footer */
 .footer {
-    padding: 4rem 2rem;
+    padding: 1.25rem 2rem;
     background: var(--bg-secondary);
     border-top: 1px solid var(--border-subtle);
 }
@@ -991,17 +991,10 @@ body {
     text-align: center;
 }
 
-.footer-brand {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-}
-
 .footer-text {
     color: var(--text-muted);
-    margin-bottom: 2rem;
+    font-size: 0.85rem;
+    margin: 0;
 }
 
 .footer-divider {
