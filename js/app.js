@@ -92,25 +92,28 @@ document.addEventListener('keydown', (e) => {
     // Don't trigger if user is typing in an input
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
     
-    const prevLink = document.querySelector('.sidebar-nav-btn.prev, .article-nav-link.prev:not(.disabled)');
-    const nextLink = document.querySelector('.sidebar-nav-btn.next, .article-nav-link.next:not(.disabled)');
+    const currentActive = document.querySelector('.chapter-item.active');
     
-    if (e.key === 'ArrowLeft' && prevLink) {
+    if (e.key === 'ArrowLeft' && currentActive) {
         e.preventDefault();
-        // Add visual feedback
-        prevLink.style.transform = 'scale(0.95)';
-        setTimeout(() => {
-            window.location.href = prevLink.href;
-        }, 100);
+        const prevItem = currentActive.previousElementSibling;
+        if (prevItem && prevItem.classList.contains('chapter-item')) {
+            window.location.href = prevItem.href;
+        }
     }
     
-    if (e.key === 'ArrowRight' && nextLink) {
+    if (e.key === 'ArrowRight') {
         e.preventDefault();
-        // Add visual feedback
-        nextLink.style.transform = 'scale(0.95)';
-        setTimeout(() => {
-            window.location.href = nextLink.href;
-        }, 100);
+        // Use continue card if available, otherwise find next from chapter list
+        const continueCard = document.querySelector('.continue-card');
+        if (continueCard) {
+            window.location.href = continueCard.href;
+        } else if (currentActive) {
+            const nextItem = currentActive.nextElementSibling;
+            if (nextItem && nextItem.classList.contains('chapter-item')) {
+                window.location.href = nextItem.href;
+            }
+        }
     }
 });
 

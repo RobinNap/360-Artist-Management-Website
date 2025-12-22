@@ -130,8 +130,7 @@ def generate_article_html(module_id, module, article, articles, article_index):
     for i, art in enumerate(articles):
         is_active = 'active' if i == article_index else ''
         is_completed = 'completed' if i < article_index else ''
-        chapter_list_html += f'''
-            <a href="{art["slug"]}.html" class="chapter-item {is_active} {is_completed}">
+        chapter_list_html += f'''<a href="{art["slug"]}.html" class="chapter-item {is_active} {is_completed}">
                 <span class="chapter-number">{str(i + 1).zfill(2)}</span>
                 <span class="chapter-title">{art["title"]}</span>
             </a>'''
@@ -159,28 +158,6 @@ def generate_article_html(module_id, module, article, articles, article_index):
             </a>
         </section>'''
     
-    # Inline article navigation
-    prev_link = ''
-    next_link = ''
-    
-    if article_index > 0:
-        prev_article = articles[article_index - 1]
-        prev_link = f'''<a href="{prev_article["slug"]}.html" class="article-nav-link prev">
-            <span class="nav-direction">Previous</span>
-            <span class="nav-title">{prev_article["title"]}</span>
-        </a>'''
-    else:
-        prev_link = '<div class="article-nav-link disabled"></div>'
-    
-    if article_index < len(articles) - 1:
-        next_article = articles[article_index + 1]
-        next_link = f'''<a href="{next_article["slug"]}.html" class="article-nav-link next">
-            <span class="nav-direction">Next</span>
-            <span class="nav-title">{next_article["title"]}</span>
-        </a>'''
-    else:
-        next_link = '<div class="article-nav-link disabled"></div>'
-    
     icon_svg = get_icon_svg(module.get('icon', 'layers'))
     
     return f'''<!DOCTYPE html>
@@ -188,7 +165,7 @@ def generate_article_html(module_id, module, article, articles, article_index):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{article["title"]} | {module["title"]} | 360° Artist Management</title>
+    <title>{article["title"]} | {module["title"]} | 360 Artist Management</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/articles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -202,8 +179,8 @@ def generate_article_html(module_id, module, article, articles, article_index):
     <nav class="nav">
         <div class="nav-container">
             <a href="../../index.html" class="logo">
-                <span class="logo-360">360°</span>
-                <span class="logo-text">Artist Management</span>
+                <img src="../../assets/images/logo.png" alt="360 Artist Management" class="logo-image">
+                <span class="logo-text">360 Artist Management</span>
             </a>
             <div class="nav-links">
                 <a href="../../index.html#modules" class="nav-link">Topics</a>
@@ -242,9 +219,8 @@ def generate_article_html(module_id, module, article, articles, article_index):
                     {module["title"]}
                 </a>
             </div>
-            
             <nav class="chapter-list">
-                {chapter_list_html}
+{chapter_list_html}
             </nav>
         </aside>
             
@@ -274,18 +250,14 @@ def generate_article_html(module_id, module, article, articles, article_index):
                 </article>
 
                 {continue_section}
-
-                <nav class="article-navigation">
-                    {prev_link}
-                    {next_link}
-                </nav>
             </div>
         </div>
     </main>
 
     <footer class="footer">
         <div class="footer-content">
-            <p class="footer-text">© 2025 360° Artist Management. All rights reserved.</p>
+            <p class="footer-text">© 2025 360 Artist Management. All rights reserved.</p>
+            <p class="footer-text">KVK-nummer: 86521438</p>
         </div>
     </footer>
 
@@ -320,7 +292,7 @@ def generate_module_html(module_id, module):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{module["title"]} | 360° Artist Management</title>
+    <title>{module["title"]} | 360 Artist Management</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -333,8 +305,8 @@ def generate_module_html(module_id, module):
     <nav class="nav">
         <div class="nav-container">
             <a href="../index.html" class="logo">
-                <span class="logo-360">360°</span>
-                <span class="logo-text">Artist Management</span>
+                <img src="../assets/images/logo.png" alt="360 Artist Management" class="logo-image">
+                <span class="logo-text">360 Artist Management</span>
             </a>
             <div class="nav-links">
                 <a href="../index.html#modules" class="nav-link">Topics</a>
@@ -383,7 +355,8 @@ def generate_module_html(module_id, module):
 
     <footer class="footer">
         <div class="footer-content">
-            <p class="footer-text">© 2025 360° Artist Management. All rights reserved.</p>
+            <p class="footer-text">© 2025 360 Artist Management. All rights reserved.</p>
+            <p class="footer-text">KVK-nummer: 86521438</p>
         </div>
     </footer>
 

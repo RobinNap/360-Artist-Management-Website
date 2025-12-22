@@ -6,46 +6,12 @@
   },
   "modules": {
     "onboarding": {
-      "title": "Onboarding",
+      "title": "Branding",
       "description": "Build your artist identity from the ground up.",
       "icon": "layers",
       "articles": [
         {
-          "slug": "01-welcome",
-          "title": "Welcome",
-          "description": "Your starting point for building a professional music career.",
-          "content": [
-            {
-              "type": "intro",
-              "text": "Welcome to the 360° Artist Management knowledge base. This is your comprehensive guide to building a professional music career, created from years of industry experience."
-            },
-            {
-              "type": "text",
-              "text": "This knowledge base covers six essential areas: Onboarding & Branding, Management, Marketing, Bookings, Finance, and Legal. Use it as a reference whenever you need guidance on any aspect of your career."
-            },
-            {
-              "type": "tip",
-              "text": "Create a dedicated folder on your computer to save notes as you go through these materials. Taking notes significantly improves retention."
-            },
-            {
-              "type": "heading",
-              "text": "What You'll Learn"
-            },
-            {
-              "type": "grid",
-              "items": [
-                {"icon": "🎨", "title": "Branding", "text": "Build your identity"},
-                {"icon": "👥", "title": "Management", "text": "Understand fan journeys"},
-                {"icon": "📣", "title": "Marketing", "text": "Promote effectively"},
-                {"icon": "📅", "title": "Bookings", "text": "Get gigs"},
-                {"icon": "💰", "title": "Finance", "text": "Manage money"},
-                {"icon": "📋", "title": "Legal", "text": "Protect yourself"}
-              ]
-            }
-          ]
-        },
-        {
-          "slug": "02-branding",
+          "slug": "01-branding",
           "title": "Branding",
           "description": "Your brand is your reputation—how people talk about you when you're not there.",
           "content": [
@@ -95,7 +61,7 @@
           ]
         },
         {
-          "slug": "03-core-values",
+          "slug": "02-core-values",
           "title": "Core Values",
           "description": "Discover what makes you stand out from the crowd.",
           "content": [
@@ -137,7 +103,7 @@
           ]
         },
         {
-          "slug": "04-visualization",
+          "slug": "03-visualization",
           "title": "Visualization",
           "description": "Define your goals and create a clear vision for your career.",
           "content": [
@@ -175,7 +141,7 @@
           ]
         },
         {
-          "slug": "05-artist-name",
+          "slug": "04-artist-name",
           "title": "Artist Name",
           "description": "Choose a name that represents your brand and is memorable.",
           "content": [
@@ -212,7 +178,7 @@
           ]
         },
         {
-          "slug": "06-logo",
+          "slug": "05-logo",
           "title": "Logo",
           "description": "Create a visual symbol that makes you instantly recognizable.",
           "content": [
@@ -249,7 +215,7 @@
           ]
         },
         {
-          "slug": "07-moodboard",
+          "slug": "06-moodboard",
           "title": "Moodboard",
           "description": "Develop your visual direction and aesthetic.",
           "content": [
@@ -286,7 +252,7 @@
           ]
         },
         {
-          "slug": "08-press-photos",
+          "slug": "07-press-photos",
           "title": "Press Photos",
           "description": "Get professional photos that work across all platforms.",
           "content": [
@@ -322,7 +288,7 @@
           ]
         },
         {
-          "slug": "09-biography",
+          "slug": "08-biography",
           "title": "Biography",
           "description": "Write a compelling story that connects with your audience.",
           "content": [
@@ -357,7 +323,7 @@
           ]
         },
         {
-          "slug": "10-stage-performance",
+          "slug": "09-stage-performance",
           "title": "Stage Performance",
           "description": "Develop your presence and create memorable experiences.",
           "content": [
@@ -394,7 +360,7 @@
           ]
         },
         {
-          "slug": "11-tone-of-voice",
+          "slug": "10-tone-of-voice",
           "title": "Tone of Voice",
           "description": "Define how you communicate with your audience.",
           "content": [
@@ -432,7 +398,7 @@
           ]
         },
         {
-          "slug": "12-your-sound",
+          "slug": "11-your-sound",
           "title": "Your Sound",
           "description": "Identify and develop your unique sonic signature.",
           "content": [
@@ -466,7 +432,7 @@
           ]
         },
         {
-          "slug": "13-online-presence",
+          "slug": "12-online-presence",
           "title": "Online Presence",
           "description": "Build and optimize your digital footprint.",
           "content": [
@@ -502,7 +468,7 @@
           ]
         },
         {
-          "slug": "14-press-kit",
+          "slug": "13-press-kit",
           "title": "Press Kit (EPK)",
           "description": "Create a professional kit that opens doors.",
           "content": [
