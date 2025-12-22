@@ -30,3 +30,9 @@ build/
 logs/
 *.log
 
+# Course PDF source files (not needed for deployment)
+Course Material PDF/
+
+# Development scripts
+generate-lessons.py
+
