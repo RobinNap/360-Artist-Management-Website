@@ -17,7 +17,8 @@ def render_content_block(block):
     block_type = block.get('type', 'text')
     
     if block_type == 'intro':
-        return f'<p class="article-intro">{block["text"]}</p>'
+        # Skip intro blocks - they are no longer displayed
+        return ''
     
     elif block_type == 'text':
         return f'<p>{block["text"]}</p>'
@@ -182,22 +183,8 @@ def generate_article_html(module_id, module, article, articles, article_index):
                 <img src="../../assets/images/logo.png" alt="360 Artist Management" class="logo-image">
                 <span class="logo-text">360 Artist Management</span>
             </a>
-            <div class="nav-links">
-                <a href="../../index.html#modules" class="nav-link">Topics</a>
-                <a href="../../index.html#about" class="nav-link">About</a>
-            </div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </nav>
-
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="../../index.html#modules" class="mobile-link">Topics</a>
-        <a href="../../index.html#about" class="mobile-link">About</a>
-    </div>
 
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
     
@@ -308,22 +295,8 @@ def generate_module_html(module_id, module):
                 <img src="../assets/images/logo.png" alt="360 Artist Management" class="logo-image">
                 <span class="logo-text">360 Artist Management</span>
             </a>
-            <div class="nav-links">
-                <a href="../index.html#modules" class="nav-link">Topics</a>
-                <a href="../index.html#about" class="nav-link">About</a>
-            </div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </nav>
-
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="../index.html#modules" class="mobile-link">Topics</a>
-        <a href="../index.html#about" class="mobile-link">About</a>
-    </div>
 
     <main class="module-page">
         <div class="module-hero">
