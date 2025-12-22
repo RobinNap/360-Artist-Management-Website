@@ -1,30 +1,36 @@
 /* 360 Artist Management - Premium Music Industry Aesthetic */
 
 :root {
-    /* Dark, sophisticated palette */
-    --bg-primary: #0a0a0b;
-    --bg-secondary: #111113;
-    --bg-tertiary: #18181b;
-    --bg-card: #1a1a1e;
-    --bg-card-hover: #222226;
+    /* Brand colors */
+    --brand-red: rgb(210, 54, 46);
+    --brand-red-hex: #d2362e;
+    --brand-black: #000000;
+    --brand-white: #ffffff;
     
-    /* Warm accent - like stage lighting */
-    --accent-primary: #ff6b35;
-    --accent-secondary: #ff8c5a;
-    --accent-glow: rgba(255, 107, 53, 0.4);
+    /* Dark grey backgrounds - softer than pure black */
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #252525;
+    --bg-tertiary: #2d2d2d;
+    --bg-card: #2a2a2a;
+    --bg-card-hover: #333333;
     
-    /* Cool secondary accent */
-    --accent-cool: #6366f1;
-    --accent-cool-glow: rgba(99, 102, 241, 0.3);
+    /* Brand red accent */
+    --accent-primary: rgb(210, 54, 46);
+    --accent-secondary: rgba(210, 54, 46, 0.8);
+    --accent-glow: rgba(210, 54, 46, 0.4);
+    
+    /* Secondary accent using brand red with variation */
+    --accent-cool: rgba(210, 54, 46, 0.7);
+    --accent-cool-glow: rgba(210, 54, 46, 0.3);
     
     /* Text colors */
-    --text-primary: #fafafa;
-    --text-secondary: #a1a1aa;
-    --text-muted: #71717a;
+    --text-primary: #ffffff;
+    --text-secondary: #d0d0d0;
+    --text-muted: #a0a0a0;
     
     /* Borders */
-    --border-subtle: rgba(255, 255, 255, 0.06);
-    --border-light: rgba(255, 255, 255, 0.1);
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-light: rgba(255, 255, 255, 0.15);
     
     /* Typography */
     --font-display: 'Clash Display', sans-serif;
@@ -68,9 +74,9 @@ body {
     width: 100%;
     height: 100%;
     background: 
-        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(255, 107, 53, 0.15), transparent),
-        radial-gradient(ellipse 60% 40% at 100% 0%, rgba(99, 102, 241, 0.1), transparent),
-        radial-gradient(ellipse 50% 30% at 0% 100%, rgba(255, 107, 53, 0.08), transparent);
+        radial-gradient(ellipse 80% 50% at 50% -20%, rgba(210, 54, 46, 0.15), transparent),
+        radial-gradient(ellipse 60% 40% at 100% 0%, rgba(210, 54, 46, 0.1), transparent),
+        radial-gradient(ellipse 50% 30% at 0% 100%, rgba(210, 54, 46, 0.08), transparent);
     pointer-events: none;
     z-index: -2;
 }
@@ -95,7 +101,7 @@ body {
     right: 0;
     z-index: 100;
     padding: 1rem 2rem;
-    background: rgba(10, 10, 11, 0.8);
+    background: rgba(26, 26, 26, 0.8);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-subtle);
 }
@@ -274,14 +280,14 @@ body {
 .pulse {
     width: 8px;
     height: 8px;
-    background: #22c55e;
+    background: rgb(210, 54, 46);
     border-radius: 50%;
     animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-    0%, 100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
-    50% { box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+    0%, 100% { box-shadow: 0 0 0 0 rgba(210, 54, 46, 0.4); }
+    50% { box-shadow: 0 0 0 8px rgba(210, 54, 46, 0); }
 }
 
 .hero-title {
@@ -294,7 +300,7 @@ body {
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 50%, var(--accent-cool) 100%);
+    background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 50%, rgba(210, 54, 46, 0.8) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -415,13 +421,13 @@ body {
     background: 
         repeating-radial-gradient(
             circle at center,
-            #1a1a1e 0px,
-            #1a1a1e 2px,
-            #0a0a0b 2px,
-            #0a0a0b 4px
+            #2a2a2a 0px,
+            #2a2a2a 2px,
+            #1a1a1a 2px,
+            #1a1a1a 4px
         );
     box-shadow: 
-        0 0 0 10px #0a0a0b,
+        0 0 0 10px #1a1a1a,
         0 0 0 12px rgba(255, 255, 255, 0.05),
         0 20px 60px rgba(0, 0, 0, 0.5);
     animation: spin 20s linear infinite;
@@ -439,7 +445,7 @@ body {
     width: 140px;
     height: 140px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--accent-primary), var(--accent-cool));
+    background: linear-gradient(135deg, var(--accent-primary), rgba(210, 54, 46, 0.8));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -514,48 +520,48 @@ body {
     left: 50%;
     transform: translateX(-50%);
     animation-delay: 0s;
-    background: linear-gradient(135deg, var(--bg-card), rgba(255, 107, 53, 0.15));
-    border-color: rgba(255, 107, 53, 0.4);
+    background: linear-gradient(135deg, var(--bg-card), rgba(210, 54, 46, 0.15));
+    border-color: rgba(210, 54, 46, 0.4);
 }
 
 .orbit-2 {
     top: 5%;
     right: -25%;
     animation-delay: 1s;
-    background: linear-gradient(135deg, var(--bg-card), rgba(99, 102, 241, 0.15));
-    border-color: rgba(99, 102, 241, 0.4);
+    background: linear-gradient(135deg, var(--bg-card), rgba(210, 54, 46, 0.12));
+    border-color: rgba(210, 54, 46, 0.35);
 }
 
 .orbit-3 {
     top: 45%;
     right: -30%;
     animation-delay: 2s;
-    background: linear-gradient(135deg, var(--bg-card), rgba(34, 197, 94, 0.15));
-    border-color: rgba(34, 197, 94, 0.4);
+    background: linear-gradient(135deg, var(--bg-card), rgba(210, 54, 46, 0.1));
+    border-color: rgba(210, 54, 46, 0.3);
 }
 
 .orbit-4 {
     bottom: 5%;
     right: -20%;
     animation-delay: 3s;
-    background: linear-gradient(135deg, var(--bg-card), rgba(251, 191, 36, 0.15));
-    border-color: rgba(251, 191, 36, 0.4);
+    background: linear-gradient(135deg, var(--bg-card), rgba(210, 54, 46, 0.12));
+    border-color: rgba(210, 54, 46, 0.35);
 }
 
 .orbit-5 {
     bottom: 5%;
     left: -20%;
     animation-delay: 4s;
-    background: linear-gradient(135deg, var(--bg-card), rgba(236, 72, 153, 0.15));
-    border-color: rgba(236, 72, 153, 0.4);
+    background: linear-gradient(135deg, var(--bg-card), rgba(210, 54, 46, 0.1));
+    border-color: rgba(210, 54, 46, 0.3);
 }
 
 .orbit-6 {
     top: 45%;
     left: -25%;
     animation-delay: 5s;
-    background: linear-gradient(135deg, var(--bg-card), rgba(139, 92, 246, 0.15));
-    border-color: rgba(139, 92, 246, 0.4);
+    background: linear-gradient(135deg, var(--bg-card), rgba(210, 54, 46, 0.12));
+    border-color: rgba(210, 54, 46, 0.35);
 }
 
 @keyframes orbit-float {
@@ -616,7 +622,7 @@ body {
 .section-tag {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(99, 102, 241, 0.1));
+    background: linear-gradient(135deg, rgba(210, 54, 46, 0.1), rgba(210, 54, 46, 0.15));
     border: 1px solid var(--border-light);
     border-radius: 100px;
     font-size: 0.85rem;
@@ -665,7 +671,7 @@ body {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, var(--accent-primary), var(--accent-cool));
+    background: linear-gradient(90deg, var(--accent-primary), rgba(210, 54, 46, 0.8));
     opacity: 0;
     transition: opacity 0.4s var(--ease-smooth);
 }
@@ -691,7 +697,7 @@ body {
 .module-icon {
     width: 48px;
     height: 48px;
-    background: linear-gradient(135deg, rgba(255, 107, 53, 0.15), rgba(99, 102, 241, 0.15));
+    background: linear-gradient(135deg, rgba(210, 54, 46, 0.15), rgba(210, 54, 46, 0.2));
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -912,16 +918,16 @@ body {
     top: 10%;
     left: 10%;
     animation-delay: 0s;
-    background: linear-gradient(135deg, var(--bg-card), rgba(255, 107, 53, 0.1));
-    border-color: rgba(255, 107, 53, 0.3);
+    background: linear-gradient(135deg, var(--bg-card), rgba(210, 54, 46, 0.1));
+    border-color: rgba(210, 54, 46, 0.3);
 }
 
 .card-2 {
     top: 5%;
     right: 15%;
     animation-delay: 1s;
-    background: linear-gradient(135deg, var(--bg-card), rgba(99, 102, 241, 0.1));
-    border-color: rgba(99, 102, 241, 0.3);
+    background: linear-gradient(135deg, var(--bg-card), rgba(210, 54, 46, 0.08));
+    border-color: rgba(210, 54, 46, 0.25);
 }
 
 .card-3 {
@@ -934,8 +940,8 @@ body {
     top: 50%;
     right: 10%;
     animation-delay: 3s;
-    background: linear-gradient(135deg, var(--bg-card), rgba(34, 197, 94, 0.1));
-    border-color: rgba(34, 197, 94, 0.3);
+    background: linear-gradient(135deg, var(--bg-card), rgba(210, 54, 46, 0.1));
+    border-color: rgba(210, 54, 46, 0.3);
 }
 
 .card-5 {
@@ -1213,7 +1219,7 @@ body {
 .module-hero-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, rgba(255, 107, 53, 0.15), rgba(99, 102, 241, 0.15));
+    background: linear-gradient(135deg, rgba(210, 54, 46, 0.15), rgba(210, 54, 46, 0.2));
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -1364,15 +1370,15 @@ body {
 }
 
 .lesson-type-badge.worksheet {
-    background: rgba(99, 102, 241, 0.15);
-    color: var(--accent-cool);
+    background: rgba(210, 54, 46, 0.15);
+    color: var(--accent-primary);
 }
 
 .lesson-type-badge.interactive,
 .lesson-type-badge:contains("Interactive") {
-    background: linear-gradient(135deg, rgba(255, 107, 53, 0.15), rgba(99, 102, 241, 0.15));
+    background: linear-gradient(135deg, rgba(210, 54, 46, 0.15), rgba(210, 54, 46, 0.2));
     color: var(--accent-primary);
-    border: 1px solid rgba(255, 107, 53, 0.2);
+    border: 1px solid rgba(210, 54, 46, 0.2);
 }
 
 .lesson-action {
@@ -1439,7 +1445,7 @@ body {
 .resource-icon {
     width: 44px;
     height: 44px;
-    background: rgba(99, 102, 241, 0.15);
+    background: rgba(210, 54, 46, 0.15);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -1450,7 +1456,7 @@ body {
 .resource-icon svg {
     width: 22px;
     height: 22px;
-    stroke: var(--accent-cool);
+    stroke: var(--accent-primary);
 }
 
 .resource-info h4 {
@@ -1484,7 +1490,7 @@ body {
 
 /* Selection */
 ::selection {
-    background: rgba(255, 107, 53, 0.3);
+    background: rgba(210, 54, 46, 0.3);
     color: var(--text-primary);
 }
 
