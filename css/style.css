@@ -1233,6 +1233,13 @@ body {
     color: var(--accent-cool);
 }
 
+.lesson-type-badge.interactive,
+.lesson-type-badge:contains("Interactive") {
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.15), rgba(99, 102, 241, 0.15));
+    color: var(--accent-primary);
+    border: 1px solid rgba(255, 107, 53, 0.2);
+}
+
 .lesson-action {
     display: flex;
     align-items: center;
