@@ -1,0 +1,299 @@
+/* Article Page Styles - Knowledge Base */
+
+/* Article Container */
+.article-page {
+    padding-top: 80px;
+    min-height: 100vh;
+}
+
+/* Article Header */
+.article-header {
+    padding: 3rem 2rem;
+    border-bottom: 1px solid var(--border-subtle);
+    background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+}
+
+.article-header-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.article-topic-badge {
+    padding: 0.4rem 1rem;
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.15), rgba(99, 102, 241, 0.15));
+    border: 1px solid var(--border-light);
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--accent-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.article-number-badge {
+    padding: 0.4rem 0.8rem;
+    background: var(--bg-tertiary);
+    border-radius: 8px;
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.article-header h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.article-description {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    max-width: 700px;
+    line-height: 1.7;
+}
+
+/* Article Content */
+.article-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+/* Content Sections */
+.content-section {
+    margin-bottom: 3rem;
+}
+
+.content-section h2 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    color: var(--text-primary);
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border-subtle);
+}
+
+.content-section h3 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    margin-top: 1.5rem;
+    color: var(--accent-primary);
+}
+
+.content-section p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.content-section ul,
+.content-section ol {
+    margin: 1rem 0 1.5rem 1.5rem;
+}
+
+.content-section li {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.content-section strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Concept Blocks */
+.concept-block {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.concept-block h3 {
+    margin-top: 0;
+}
+
+.concept-block p:last-child,
+.concept-block ul:last-child,
+.concept-block ol:last-child {
+    margin-bottom: 0;
+}
+
+/* Tip Box */
+.tip-box {
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.08), rgba(99, 102, 241, 0.08));
+    border-left: 4px solid var(--accent-primary);
+    border-radius: 0 12px 12px 0;
+    margin: 2rem 0;
+}
+
+.tip-box-header {
+    font-weight: 600;
+    color: var(--accent-primary);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.tip-box p {
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* Key Takeaways */
+.takeaways-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.takeaway-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 10px;
+}
+
+.takeaway-icon {
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.takeaway-item span:last-child {
+    font-size: 1rem;
+    color: var(--text-primary);
+    line-height: 1.5;
+}
+
+/* Article Navigation */
+.article-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 2rem;
+    border-top: 1px solid var(--border-subtle);
+    background: var(--bg-secondary);
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.article-nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 500;
+    transition: all 0.3s var(--ease-smooth);
+    flex: 1;
+    max-width: 48%;
+}
+
+.article-nav-btn:hover {
+    border-color: var(--border-light);
+    background: var(--bg-card-hover);
+}
+
+.article-nav-btn.next {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    border: none;
+    color: white;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.article-nav-btn.next:hover {
+    transform: translateX(4px);
+}
+
+.article-nav-btn.prev:hover {
+    transform: translateX(-4px);
+}
+
+.article-nav-btn svg {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.nav-btn-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-btn-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.article-nav-btn.next .nav-btn-label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-btn-title {
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .article-header {
+        padding: 2rem 1rem;
+    }
+    
+    .article-content {
+        padding: 2rem 1rem;
+    }
+    
+    .article-nav {
+        flex-direction: column;
+        padding: 1.5rem 1rem;
+    }
+    
+    .article-nav-btn {
+        max-width: 100%;
+        justify-content: center;
+    }
+    
+    .article-nav-btn.next {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
