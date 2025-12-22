@@ -1038,10 +1038,23 @@ body {
     flex-direction: column;
     text-align: center;
     gap: 0.75rem;
+    align-items: center;
 }
 
 .about-centered .feature-icon {
     margin: 0 auto;
+}
+
+.about-centered .feature-text {
+    text-align: center;
+}
+
+.about-centered .feature-text h4 {
+    text-align: center;
+}
+
+.about-centered .feature-text p {
+    text-align: center;
 }
 
 @media (max-width: 1023px) {
@@ -1049,12 +1062,42 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
+    
+    .about-centered .feature {
+        text-align: center;
+        align-items: center;
+    }
+    
+    .about-centered .feature-text {
+        text-align: center;
+    }
+    
+    .about-centered .feature-text h4,
+    .about-centered .feature-text p {
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
     .about-centered .about-features {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+    
+    .about-centered .feature {
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .about-centered .feature-text {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .about-centered .feature-text h4,
+    .about-centered .feature-text p {
+        text-align: center;
     }
 }
 
@@ -2057,8 +2100,26 @@ body {
         gap: 1rem;
     }
     
+    .about-centered .about-features {
+        gap: 1.5rem;
+    }
+    
     .feature {
         gap: 0.75rem;
+    }
+    
+    .about-centered .feature {
+        text-align: center;
+        align-items: center;
+    }
+    
+    .about-centered .feature-text {
+        text-align: center;
+    }
+    
+    .about-centered .feature-text h4,
+    .about-centered .feature-text p {
+        text-align: center;
     }
     
     .feature-icon {
