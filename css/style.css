@@ -516,7 +516,7 @@ body {
 
 /* Position each card around the vinyl */
 .orbit-1 {
-    top: -15%;
+    top: 5%;
     left: 50%;
     transform: translateX(-50%);
     animation-delay: 0s;
@@ -525,40 +525,40 @@ body {
 }
 
 .orbit-2 {
-    top: 5%;
-    right: -25%;
+    top: 15%;
+    right: -5%;
     animation-delay: 1s;
     background: linear-gradient(135deg, var(--bg-card), rgba(210, 54, 46, 0.12));
     border-color: rgba(210, 54, 46, 0.35);
 }
 
 .orbit-3 {
-    top: 45%;
-    right: -30%;
+    top: 50%;
+    right: -8%;
     animation-delay: 2s;
     background: linear-gradient(135deg, var(--bg-card), rgba(210, 54, 46, 0.1));
     border-color: rgba(210, 54, 46, 0.3);
 }
 
 .orbit-4 {
-    bottom: 5%;
-    right: -20%;
+    bottom: 15%;
+    right: -5%;
     animation-delay: 3s;
     background: linear-gradient(135deg, var(--bg-card), rgba(210, 54, 46, 0.12));
     border-color: rgba(210, 54, 46, 0.35);
 }
 
 .orbit-5 {
-    bottom: 5%;
-    left: -20%;
+    bottom: 15%;
+    left: -5%;
     animation-delay: 4s;
     background: linear-gradient(135deg, var(--bg-card), rgba(210, 54, 46, 0.1));
     border-color: rgba(210, 54, 46, 0.3);
 }
 
 .orbit-6 {
-    top: 45%;
-    left: -25%;
+    top: 50%;
+    left: -8%;
     animation-delay: 5s;
     background: linear-gradient(135deg, var(--bg-card), rgba(210, 54, 46, 0.12));
     border-color: rgba(210, 54, 46, 0.35);
