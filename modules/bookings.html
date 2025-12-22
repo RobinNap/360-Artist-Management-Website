@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings | 360° Artist Management</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Satoshi:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-module="bookings">
+    <div class="bg-gradient"></div>
+    <div class="noise-overlay"></div>
+    
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-360">360°</span>
+                <span class="logo-text">Artist Management</span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#modules" class="nav-link">All Modules</a>
+                <a href="#" class="nav-link progress-btn" id="progressBtn">
+                    <span class="progress-ring"></span>
+                    My Progress
+                </a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="module-page">
+        <section class="module-hero">
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a>
+                <span>›</span>
+                <a href="../index.html#modules">Modules</a>
+                <span>›</span>
+                <span class="current">Bookings</span>
+            </nav>
+            
+            <div class="module-hero-content">
+                <div class="module-hero-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="16" y1="2" x2="16" y2="6"/>
+                        <line x1="8" y1="2" x2="8" y2="6"/>
+                        <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                </div>
+                <div class="module-hero-text">
+                    <h1>Bookings</h1>
+                    <p>Get booked at clubs and festivals. Learn how to approach bookers, build riders, and deliver unforgettable performances.</p>
+                    <div class="module-progress-overview">
+                        <div class="module-progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                        <span class="module-progress-text">0/10 lessons completed</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lessons-section">
+            <h2 class="section-title" style="margin-bottom: 2rem;">Lessons</h2>
+            
+            <div class="lessons-grid">
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="book-01">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">01</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">What Type of DJ Are You?</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Bookings/01 What Type of DJ Are You?.pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="book-02">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">02</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Find Your Stage</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Bookings/02 Find Your Stage .pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="book-03">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">03</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Getting Booked at a Club</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Bookings/03 Getting Booked at a Club .pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="book-04">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">04</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Getting Booked at a Festival</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Bookings/04 Getting Booked at a Festival .pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="book-05">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">05</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">How To Write A Booker</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Bookings/05 How To Write A Booker.pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="book-06">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">06</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Build Your Riders</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Bookings/06 Build Your Riders.pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="book-07">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">07</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Create a Setlist</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Bookings/07 Create a Setlist.pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="book-08">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">08</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Keep Track of Your Booking Information</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Bookings/08 Keep Track of Your Booking Information.pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="book-09">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">09</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Preparing Your Performance</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Bookings/09 Preparing Your Performance.pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="book-10">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">10</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Making a Lasting Impression</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Bookings/10 Making a Lasting Impression.pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Continue to Finance →</h2>
+                <p>Learn how to manage your money and build a sustainable career.</p>
+                <a href="finance.html" class="btn btn-primary btn-large">
+                    Next Module
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-360">360°</span>
+                <span class="logo-text">Artist Management</span>
+            </div>
+            <p class="footer-text">Empowering artists to take control of their careers.</p>
+            <div class="footer-divider"></div>
+            <p class="footer-copyright">© 2025 360° Artist Management. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="progressModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">×</button>
+            <h3>Your Progress</h3>
+            <div class="overall-progress">
+                <div class="circular-progress" id="overallProgress">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="progress-bg" cx="50" cy="50" r="45"/>
+                        <circle class="progress-circle" cx="50" cy="50" r="45" id="progressCircle"/>
+                    </svg>
+                    <span class="progress-text" id="progressText">0%</span>
+                </div>
+                <div class="progress-stats">
+                    <p><span id="completedLessons">0</span> of <span id="totalLessons">44</span> lessons completed</p>
+                </div>
+            </div>
+            <div class="module-progress-list" id="moduleProgressList"></div>
+            <button class="btn btn-ghost reset-btn" id="resetProgress">Reset All Progress</button>
+        </div>
+    </div>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>
+

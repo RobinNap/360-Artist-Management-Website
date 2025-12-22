@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboarding | 360° Artist Management</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Satoshi:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-module="onboarding">
+    <!-- Animated Background -->
+    <div class="bg-gradient"></div>
+    <div class="noise-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <span class="logo-360">360°</span>
+                <span class="logo-text">Artist Management</span>
+            </a>
+            <div class="nav-links">
+                <a href="../index.html#modules" class="nav-link">All Modules</a>
+                <a href="#" class="nav-link progress-btn" id="progressBtn">
+                    <span class="progress-ring"></span>
+                    My Progress
+                </a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Module Hero -->
+    <div class="module-page">
+        <section class="module-hero">
+            <nav class="breadcrumb">
+                <a href="../index.html">Home</a>
+                <span>›</span>
+                <a href="../index.html#modules">Modules</a>
+                <span>›</span>
+                <span class="current">Onboarding</span>
+            </nav>
+            
+            <div class="module-hero-content">
+                <div class="module-hero-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <div class="module-hero-text">
+                    <h1>Onboarding</h1>
+                    <p>Build your artist identity from the ground up. Define your brand, create your visual identity, and craft your unique sound.</p>
+                    <div class="module-progress-overview">
+                        <div class="module-progress-bar">
+                            <div class="progress-fill" style="width: 0%"></div>
+                        </div>
+                        <span class="module-progress-text">0/14 lessons completed</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lessons -->
+        <section class="lessons-section">
+            <h2 class="section-title" style="margin-bottom: 2rem;">Lessons</h2>
+            
+            <div class="lessons-grid">
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="onb-01">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">01</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Welcome</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Onboarding/01 Welcome.pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="onb-02">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">02</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Branding</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Onboarding/02 Branding.pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="onb-03">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">03</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Core Values</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Onboarding/03 Core Values.pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="onb-04">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">04</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Visualization</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Onboarding/04 Visualization.pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="onb-05">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">05</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Artist Name</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Onboarding/05 Artist Name .pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="onb-06">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">06</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Logo</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Onboarding/06 Logo.pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="onb-07a">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">07</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Moodboard Worksheet</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge worksheet">Worksheet</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Onboarding/07 Moodboard Worksheet.pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="onb-07b">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">08</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Press Photos</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Onboarding/07 Press Photos.pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="onb-08">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">09</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Biography</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Onboarding/08 Biography.pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="onb-09">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">10</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Stage Performance</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Onboarding/09 Stage Performance .pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="onb-10">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">11</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Tone of Voice</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Onboarding/10 Tone of Voice.pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="onb-11">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">12</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Your Sound</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Onboarding/11 Your Sound.pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="onb-12">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">13</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Online Presence</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Onboarding/12 Online Presence .pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="lesson-card">
+                    <div class="lesson-checkbox" data-lesson-id="onb-13">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                            <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                    </div>
+                    <span class="lesson-number">14</span>
+                    <div class="lesson-info">
+                        <h3 class="lesson-title">Creating Your Press Kit (EPK)</h3>
+                        <div class="lesson-type">
+                            <span class="lesson-type-badge">Lesson</span>
+                        </div>
+                    </div>
+                    <a href="../Course Material PDF/Onboarding/13 Creating Your Press Kit (EPK) .pdf" class="lesson-action" target="_blank">
+                        View PDF
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section class="resources-section">
+            <div class="resources-container">
+                <h2>Additional Resources & Worksheets</h2>
+                <div class="resources-grid">
+                    <a href="../Course Material PDF/Onboarding/Biography Worksheet.pdf" class="resource-card" target="_blank">
+                        <div class="resource-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                            </svg>
+                        </div>
+                        <div class="resource-info">
+                            <h4>Biography Worksheet</h4>
+                            <p>Craft your artist bio</p>
+                        </div>
+                    </a>
+                    <a href="../Course Material PDF/Onboarding/Branding Questionaire.pdf" class="resource-card" target="_blank">
+                        <div class="resource-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                            </svg>
+                        </div>
+                        <div class="resource-info">
+                            <h4>Branding Questionnaire</h4>
+                            <p>Define your brand identity</p>
+                        </div>
+                    </a>
+                    <a href="../Course Material PDF/Onboarding/Moodboard Worksheet.pdf" class="resource-card" target="_blank">
+                        <div class="resource-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                            </svg>
+                        </div>
+                        <div class="resource-info">
+                            <h4>Moodboard Worksheet</h4>
+                            <p>Create your visual direction</p>
+                        </div>
+                    </a>
+                    <a href="../Course Material PDF/Onboarding/My Core Values Worksheet.pdf" class="resource-card" target="_blank">
+                        <div class="resource-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                            </svg>
+                        </div>
+                        <div class="resource-info">
+                            <h4>Core Values Worksheet</h4>
+                            <p>Discover what drives you</p>
+                        </div>
+                    </a>
+                    <a href="../Course Material PDF/Onboarding/Narrative Worksheet .pdf" class="resource-card" target="_blank">
+                        <div class="resource-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                            </svg>
+                        </div>
+                        <div class="resource-info">
+                            <h4>Narrative Worksheet</h4>
+                            <p>Tell your story</p>
+                        </div>
+                    </a>
+                    <a href="../Course Material PDF/Onboarding/The Brand House Worksheet.pdf" class="resource-card" target="_blank">
+                        <div class="resource-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                            </svg>
+                        </div>
+                        <div class="resource-info">
+                            <h4>Brand House Worksheet</h4>
+                            <p>Build your brand foundation</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Next Module CTA -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Continue to Management →</h2>
+                <p>Learn how to manage your artist career and build your network.</p>
+                <a href="management.html" class="btn btn-primary btn-large">
+                    Next Module
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-360">360°</span>
+                <span class="logo-text">Artist Management</span>
+            </div>
+            <p class="footer-text">Empowering artists to take control of their careers.</p>
+            <div class="footer-divider"></div>
+            <p class="footer-copyright">© 2025 360° Artist Management. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Progress Modal -->
+    <div class="modal" id="progressModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">×</button>
+            <h3>Your Progress</h3>
+            <div class="overall-progress">
+                <div class="circular-progress" id="overallProgress">
+                    <svg viewBox="0 0 100 100">
+                        <circle class="progress-bg" cx="50" cy="50" r="45"/>
+                        <circle class="progress-circle" cx="50" cy="50" r="45" id="progressCircle"/>
+                    </svg>
+                    <span class="progress-text" id="progressText">0%</span>
+                </div>
+                <div class="progress-stats">
+                    <p><span id="completedLessons">0</span> of <span id="totalLessons">44</span> lessons completed</p>
+                </div>
+            </div>
+            <div class="module-progress-list" id="moduleProgressList"></div>
+            <button class="btn btn-ghost reset-btn" id="resetProgress">Reset All Progress</button>
+        </div>
+    </div>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>
+

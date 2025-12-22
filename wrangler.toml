@@ -1,0 +1,12 @@
+# Cloudflare Pages Configuration
+# This file is optional but can be useful for advanced configuration
+
+name = "360-artist-management"
+compatibility_date = "2024-01-01"
+
+# For Cloudflare Pages, most configuration is done in the dashboard
+# This file is here for reference and potential future use with Wrangler CLI
+
+[site]
+bucket = "./"
+
