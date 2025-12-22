@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Satoshi:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body data-module="bookings">
+<body>
     <div class="bg-gradient"></div>
     <div class="noise-overlay"></div>
-    
+
     <nav class="nav">
         <div class="nav-container">
             <a href="../index.html" class="logo">
@@ -20,144 +20,179 @@
                 <span class="logo-text">Artist Management</span>
             </a>
             <div class="nav-links">
-                <a href="../index.html#modules" class="nav-link">All Topics</a>
+                <a href="../index.html#modules" class="nav-link">Topics</a>
+                <a href="../index.html#about" class="nav-link">About</a>
             </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-    <div class="module-page">
-        <section class="module-hero">
-            <nav class="breadcrumb">
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../index.html#modules" class="mobile-link">Topics</a>
+        <a href="../index.html#about" class="mobile-link">About</a>
+    </div>
+
+    <main class="module-page">
+        <div class="module-hero">
+            <div class="breadcrumb">
                 <a href="../index.html">Home</a>
-                <span>›</span>
+                <span>/</span>
                 <span class="current">Bookings</span>
-            </nav>
-            
+            </div>
             <div class="module-hero-content">
                 <div class="module-hero-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                        <line x1="16" y1="2" x2="16" y2="6"/>
-                        <line x1="8" y1="2" x2="8" y2="6"/>
-                        <line x1="3" y1="10" x2="21" y2="10"/>
-                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                 </div>
                 <div class="module-hero-text">
                     <h1>Bookings</h1>
-                    <p>Get booked at clubs and festivals. Learn how to approach bookers, build riders, and deliver unforgettable performances.</p>
+                    <p>Get gigs at clubs and festivals.</p>
+                    <div class="module-stats">
+                        <span>10 articles</span>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <section class="lessons-section">
-            <h2 class="section-title" style="margin-bottom: 2rem;">Articles</h2>
-            
             <div class="lessons-grid">
-                <a href="../lessons/bookings/01-dj-type.html" class="lesson-card">
-                    <span class="lesson-number">01</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">What Type of DJ Are You?</h3>
-                        <p class="lesson-desc">Identify your style and niche</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/bookings/02-find-stage.html" class="lesson-card">
-                    <span class="lesson-number">02</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Find Your Stage</h3>
-                        <p class="lesson-desc">Discover venues that align with your style</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/bookings/03-booked-club.html" class="lesson-card">
-                    <span class="lesson-number">03</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Getting Booked at a Club</h3>
-                        <p class="lesson-desc">Strategies for landing club bookings</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/bookings/04-booked-festival.html" class="lesson-card">
-                    <span class="lesson-number">04</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Getting Booked at a Festival</h3>
-                        <p class="lesson-desc">Stand out to festival programmers</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/bookings/05-write-booker.html" class="lesson-card">
-                    <span class="lesson-number">05</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">How To Write A Booker</h3>
-                        <p class="lesson-desc">Craft emails that get responses</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/bookings/06-riders.html" class="lesson-card">
-                    <span class="lesson-number">06</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Build Your Riders</h3>
-                        <p class="lesson-desc">Create technical and hospitality riders</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/bookings/07-setlist.html" class="lesson-card">
-                    <span class="lesson-number">07</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Create a Setlist</h3>
-                        <p class="lesson-desc">Build sets that take audiences on a journey</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/bookings/08-booking-info.html" class="lesson-card">
-                    <span class="lesson-number">08</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Track Booking Information</h3>
-                        <p class="lesson-desc">Organize your booking details professionally</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/bookings/09-prepare-performance.html" class="lesson-card">
-                    <span class="lesson-number">09</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Preparing Your Performance</h3>
-                        <p class="lesson-desc">Get ready for showtime</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/bookings/10-lasting-impression.html" class="lesson-card">
-                    <span class="lesson-number">10</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Making a Lasting Impression</h3>
-                        <p class="lesson-desc">Leave every gig with new opportunities</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
+                
+        <a href="../lessons/bookings/01-dj-type.html" class="lesson-card">
+            <div class="lesson-number">01</div>
+            <div class="lesson-info">
+                <div class="lesson-title">What Type of DJ Are You?</div>
+                <div class="lesson-type">Identify your style and find your niche.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/bookings/02-find-stage.html" class="lesson-card">
+            <div class="lesson-number">02</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Find Your Stage</div>
+                <div class="lesson-type">Discover venues that match your style.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/bookings/03-booked-club.html" class="lesson-card">
+            <div class="lesson-number">03</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Getting Booked at a Club</div>
+                <div class="lesson-type">Strategies for landing club bookings.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/bookings/04-booked-festival.html" class="lesson-card">
+            <div class="lesson-number">04</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Getting Booked at a Festival</div>
+                <div class="lesson-type">Stand out to festival programmers.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/bookings/05-write-booker.html" class="lesson-card">
+            <div class="lesson-number">05</div>
+            <div class="lesson-info">
+                <div class="lesson-title">How To Write A Booker</div>
+                <div class="lesson-type">Craft emails that get responses.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/bookings/06-riders.html" class="lesson-card">
+            <div class="lesson-number">06</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Build Your Riders</div>
+                <div class="lesson-type">Create professional technical and hospitality riders.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/bookings/07-setlist.html" class="lesson-card">
+            <div class="lesson-number">07</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Create a Setlist</div>
+                <div class="lesson-type">Build sets that take audiences on a journey.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/bookings/08-booking-info.html" class="lesson-card">
+            <div class="lesson-number">08</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Track Booking Information</div>
+                <div class="lesson-type">Stay organized and professional.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/bookings/09-prepare-performance.html" class="lesson-card">
+            <div class="lesson-number">09</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Preparing Your Performance</div>
+                <div class="lesson-type">Get ready for showtime.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/bookings/10-lasting-impression.html" class="lesson-card">
+            <div class="lesson-number">10</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Making a Lasting Impression</div>
+                <div class="lesson-type">Leave every gig with new opportunities.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
             </div>
         </section>
-
-        <section class="cta-section">
-            <div class="cta-content">
-                <h2>Next Topic: Finance →</h2>
-                <p>Learn how to manage your money and build a sustainable career.</p>
-                <a href="finance.html" class="btn btn-primary btn-large">
-                    Continue Reading
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </a>
-            </div>
-        </section>
-    </div>
+    </main>
 
     <footer class="footer">
         <div class="footer-content">
@@ -165,9 +200,7 @@
                 <span class="logo-360">360°</span>
                 <span class="logo-text">Artist Management</span>
             </div>
-            <p class="footer-text">Sharing knowledge to help artists take control of their careers.</p>
-            <div class="footer-divider"></div>
-            <p class="footer-copyright">© 2025 360° Artist Management. All rights reserved.</p>
+            <p class="footer-text">Knowledge shared freely.</p>
         </div>
     </footer>
 

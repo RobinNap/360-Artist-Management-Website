@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Satoshi:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body data-module="marketing">
+<body>
     <div class="bg-gradient"></div>
     <div class="noise-overlay"></div>
-    
+
     <nav class="nav">
         <div class="nav-container">
             <a href="../index.html" class="logo">
@@ -20,123 +20,153 @@
                 <span class="logo-text">Artist Management</span>
             </a>
             <div class="nav-links">
-                <a href="../index.html#modules" class="nav-link">All Topics</a>
+                <a href="../index.html#modules" class="nav-link">Topics</a>
+                <a href="../index.html#about" class="nav-link">About</a>
             </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-    <div class="module-page">
-        <section class="module-hero">
-            <nav class="breadcrumb">
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../index.html#modules" class="mobile-link">Topics</a>
+        <a href="../index.html#about" class="mobile-link">About</a>
+    </div>
+
+    <main class="module-page">
+        <div class="module-hero">
+            <div class="breadcrumb">
                 <a href="../index.html">Home</a>
-                <span>›</span>
+                <span>/</span>
                 <span class="current">Marketing</span>
-            </nav>
-            
+            </div>
             <div class="module-hero-content">
                 <div class="module-hero-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23,6 13.5,15.5 8.5,10.5 1,18"/><polyline points="17,6 23,6 23,12"/></svg>
                 </div>
                 <div class="module-hero-text">
                     <h1>Marketing</h1>
-                    <p>Master the art of promotion. From press releases to content strategy, learn how to get noticed and build your audience.</p>
+                    <p>Promote your music and grow your audience.</p>
+                    <div class="module-stats">
+                        <span>8 articles</span>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <section class="lessons-section">
-            <h2 class="section-title" style="margin-bottom: 2rem;">Articles</h2>
-            
             <div class="lessons-grid">
-                <a href="../lessons/marketing/01-what-is-marketing.html" class="lesson-card">
-                    <span class="lesson-number">01</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">What is Marketing?</h3>
-                        <p class="lesson-desc">Understand the fundamentals of artist marketing</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/marketing/02-newsworthiness.html" class="lesson-card">
-                    <span class="lesson-number">02</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Newsworthiness</h3>
-                        <p class="lesson-desc">Create buzz-worthy content and moments</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/marketing/03-reaching-out.html" class="lesson-card">
-                    <span class="lesson-number">03</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Reaching Out</h3>
-                        <p class="lesson-desc">Master outreach to media and industry contacts</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/marketing/04-press-release.html" class="lesson-card">
-                    <span class="lesson-number">04</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Writing a Press Release</h3>
-                        <p class="lesson-desc">Craft releases that get media coverage</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/marketing/05-newsletter.html" class="lesson-card">
-                    <span class="lesson-number">05</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Writing a Newsletter</h3>
-                        <p class="lesson-desc">Build direct relationships with fans</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/marketing/06-storytelling.html" class="lesson-card">
-                    <span class="lesson-number">06</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Storytelling</h3>
-                        <p class="lesson-desc">Create deeper connections through narrative</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/marketing/07-creating-content.html" class="lesson-card">
-                    <span class="lesson-number">07</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Creating Content</h3>
-                        <p class="lesson-desc">Develop a content strategy that engages</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/marketing/08-control-content.html" class="lesson-card">
-                    <span class="lesson-number">08</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Control Your Content</h3>
-                        <p class="lesson-desc">Manage your content calendar effectively</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
+                
+        <a href="../lessons/marketing/01-what-is-marketing.html" class="lesson-card">
+            <div class="lesson-number">01</div>
+            <div class="lesson-info">
+                <div class="lesson-title">What is Marketing?</div>
+                <div class="lesson-type">Understand the fundamentals of promoting your music.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/marketing/02-newsworthiness.html" class="lesson-card">
+            <div class="lesson-number">02</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Newsworthiness</div>
+                <div class="lesson-type">Learn what makes content worth sharing.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/marketing/03-reaching-out.html" class="lesson-card">
+            <div class="lesson-number">03</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Reaching Out</div>
+                <div class="lesson-type">Master the art of professional outreach.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/marketing/04-press-release.html" class="lesson-card">
+            <div class="lesson-number">04</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Writing a Press Release</div>
+                <div class="lesson-type">Craft releases that get media attention.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/marketing/05-newsletter.html" class="lesson-card">
+            <div class="lesson-number">05</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Writing a Newsletter</div>
+                <div class="lesson-type">Build direct relationships with your fans.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/marketing/06-storytelling.html" class="lesson-card">
+            <div class="lesson-number">06</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Storytelling</div>
+                <div class="lesson-type">Create deeper connections through narrative.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/marketing/07-creating-content.html" class="lesson-card">
+            <div class="lesson-number">07</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Creating Content</div>
+                <div class="lesson-type">Develop content that engages your audience.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/marketing/08-control-content.html" class="lesson-card">
+            <div class="lesson-number">08</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Control Your Content</div>
+                <div class="lesson-type">Manage your content strategy effectively.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
             </div>
         </section>
-
-        <section class="cta-section">
-            <div class="cta-content">
-                <h2>Next Topic: Bookings →</h2>
-                <p>Learn how to get booked at clubs and festivals.</p>
-                <a href="bookings.html" class="btn btn-primary btn-large">
-                    Continue Reading
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </a>
-            </div>
-        </section>
-    </div>
+    </main>
 
     <footer class="footer">
         <div class="footer-content">
@@ -144,9 +174,7 @@
                 <span class="logo-360">360°</span>
                 <span class="logo-text">Artist Management</span>
             </div>
-            <p class="footer-text">Sharing knowledge to help artists take control of their careers.</p>
-            <div class="footer-divider"></div>
-            <p class="footer-copyright">© 2025 360° Artist Management. All rights reserved.</p>
+            <p class="footer-text">Knowledge shared freely.</p>
         </div>
     </footer>
 

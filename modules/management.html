@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Satoshi:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body data-module="management">
+<body>
     <div class="bg-gradient"></div>
     <div class="noise-overlay"></div>
-    
+
     <nav class="nav">
         <div class="nav-container">
             <a href="../index.html" class="logo">
@@ -20,89 +20,101 @@
                 <span class="logo-text">Artist Management</span>
             </a>
             <div class="nav-links">
-                <a href="../index.html#modules" class="nav-link">All Topics</a>
+                <a href="../index.html#modules" class="nav-link">Topics</a>
+                <a href="../index.html#about" class="nav-link">About</a>
             </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-    <div class="module-page">
-        <section class="module-hero">
-            <nav class="breadcrumb">
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../index.html#modules" class="mobile-link">Topics</a>
+        <a href="../index.html#about" class="mobile-link">About</a>
+    </div>
+
+    <main class="module-page">
+        <div class="module-hero">
+            <div class="breadcrumb">
                 <a href="../index.html">Home</a>
-                <span>›</span>
+                <span>/</span>
                 <span class="current">Management</span>
-            </nav>
-            
+            </div>
             <div class="module-hero-content">
                 <div class="module-hero-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                        <circle cx="9" cy="7" r="4"/>
-                        <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
-                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                 </div>
                 <div class="module-hero-text">
                     <h1>Management</h1>
-                    <p>Understand the artist lifecycle, map fan journeys, and build a powerful network that accelerates your career.</p>
+                    <p>Understand the artist lifecycle and build your network.</p>
+                    <div class="module-stats">
+                        <span>4 articles</span>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <section class="lessons-section">
-            <h2 class="section-title" style="margin-bottom: 2rem;">Articles</h2>
-            
             <div class="lessons-grid">
-                <a href="../lessons/management/01-artist-dna.html" class="lesson-card">
-                    <span class="lesson-number">01</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Artist DNA</h3>
-                        <p class="lesson-desc">Discover what makes you unique as an artist</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/management/02-artist-cycle.html" class="lesson-card">
-                    <span class="lesson-number">02</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">The Artist Cycle</h3>
-                        <p class="lesson-desc">Navigate the phases of an artist's career</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/management/03-fan-journey.html" class="lesson-card">
-                    <span class="lesson-number">03</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">The Fan Journey</h3>
-                        <p class="lesson-desc">Map how fans become loyal supporters</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/management/04-building-network.html" class="lesson-card">
-                    <span class="lesson-number">04</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Building Your Network</h3>
-                        <p class="lesson-desc">Connect with industry professionals</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
+                
+        <a href="../lessons/management/01-artist-dna.html" class="lesson-card">
+            <div class="lesson-number">01</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Artist DNA</div>
+                <div class="lesson-type">Understand what makes you unique as an artist.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/management/02-artist-cycle.html" class="lesson-card">
+            <div class="lesson-number">02</div>
+            <div class="lesson-info">
+                <div class="lesson-title">The Artist Cycle</div>
+                <div class="lesson-type">Navigate the different phases of an artist's career.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/management/03-fan-journey.html" class="lesson-card">
+            <div class="lesson-number">03</div>
+            <div class="lesson-info">
+                <div class="lesson-title">The Fan Journey</div>
+                <div class="lesson-type">Map how fans discover and engage with you.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/management/04-building-network.html" class="lesson-card">
+            <div class="lesson-number">04</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Building Your Network</div>
+                <div class="lesson-type">Connect with the right people in the industry.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
             </div>
         </section>
-
-        <section class="cta-section">
-            <div class="cta-content">
-                <h2>Next Topic: Marketing →</h2>
-                <p>Learn how to promote yourself and build your audience.</p>
-                <a href="marketing.html" class="btn btn-primary btn-large">
-                    Continue Reading
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </a>
-            </div>
-        </section>
-    </div>
+    </main>
 
     <footer class="footer">
         <div class="footer-content">
@@ -110,9 +122,7 @@
                 <span class="logo-360">360°</span>
                 <span class="logo-text">Artist Management</span>
             </div>
-            <p class="footer-text">Sharing knowledge to help artists take control of their careers.</p>
-            <div class="footer-divider"></div>
-            <p class="footer-copyright">© 2025 360° Artist Management. All rights reserved.</p>
+            <p class="footer-text">Knowledge shared freely.</p>
         </div>
     </footer>
 

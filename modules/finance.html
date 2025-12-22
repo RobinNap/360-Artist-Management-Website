@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Satoshi:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body data-module="finance">
+<body>
     <div class="bg-gradient"></div>
     <div class="noise-overlay"></div>
-    
+
     <nav class="nav">
         <div class="nav-container">
             <a href="../index.html" class="logo">
@@ -20,97 +20,114 @@
                 <span class="logo-text">Artist Management</span>
             </a>
             <div class="nav-links">
-                <a href="../index.html#modules" class="nav-link">All Topics</a>
+                <a href="../index.html#modules" class="nav-link">Topics</a>
+                <a href="../index.html#about" class="nav-link">About</a>
             </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-    <div class="module-page">
-        <section class="module-hero">
-            <nav class="breadcrumb">
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../index.html#modules" class="mobile-link">Topics</a>
+        <a href="../index.html#about" class="mobile-link">About</a>
+    </div>
+
+    <main class="module-page">
+        <div class="module-hero">
+            <div class="breadcrumb">
                 <a href="../index.html">Home</a>
-                <span>›</span>
+                <span>/</span>
                 <span class="current">Finance</span>
-            </nav>
-            
+            </div>
             <div class="module-hero-content">
                 <div class="module-hero-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <line x1="12" y1="1" x2="12" y2="23"/>
-                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                 </div>
                 <div class="module-hero-text">
                     <h1>Finance</h1>
-                    <p>Take control of your money. Understand income streams, royalties, budgeting, and how to build a sustainable career.</p>
+                    <p>Manage your money professionally.</p>
+                    <div class="module-stats">
+                        <span>5 articles</span>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <section class="lessons-section">
-            <h2 class="section-title" style="margin-bottom: 2rem;">Articles</h2>
-            
             <div class="lessons-grid">
-                <a href="../lessons/finance/01-income-flows.html" class="lesson-card">
-                    <span class="lesson-number">01</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Flows of Income</h3>
-                        <p class="lesson-desc">Understand the revenue streams available to artists</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/finance/02-invoicing.html" class="lesson-card">
-                    <span class="lesson-number">02</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Invoicing</h3>
-                        <p class="lesson-desc">Create professional invoices and manage billing</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/finance/03-profit-loss.html" class="lesson-card">
-                    <span class="lesson-number">03</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Calculate Your Profit & Loss</h3>
-                        <p class="lesson-desc">Track your financial performance</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/finance/04-budgeting.html" class="lesson-card">
-                    <span class="lesson-number">04</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Budgeting</h3>
-                        <p class="lesson-desc">Plan spending for sustainable growth</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/finance/05-royalties.html" class="lesson-card">
-                    <span class="lesson-number">05</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Royalties</h3>
-                        <p class="lesson-desc">Understand how music royalties work</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
+                
+        <a href="../lessons/finance/01-income-flows.html" class="lesson-card">
+            <div class="lesson-number">01</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Flows of Income</div>
+                <div class="lesson-type">Understand all your potential revenue streams.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/finance/02-invoicing.html" class="lesson-card">
+            <div class="lesson-number">02</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Invoicing</div>
+                <div class="lesson-type">Create professional invoices and get paid.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/finance/03-profit-loss.html" class="lesson-card">
+            <div class="lesson-number">03</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Calculate Your Profit & Loss</div>
+                <div class="lesson-type">Track your financial performance.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/finance/04-budgeting.html" class="lesson-card">
+            <div class="lesson-number">04</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Budgeting</div>
+                <div class="lesson-type">Plan your spending for sustainable growth.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/finance/05-royalties.html" class="lesson-card">
+            <div class="lesson-number">05</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Royalties</div>
+                <div class="lesson-type">Understand how music royalties work.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
             </div>
         </section>
-
-        <section class="cta-section">
-            <div class="cta-content">
-                <h2>Next Topic: Legal →</h2>
-                <p>Learn how to protect yourself and your music with contracts.</p>
-                <a href="legal.html" class="btn btn-primary btn-large">
-                    Continue Reading
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </a>
-            </div>
-        </section>
-    </div>
+    </main>
 
     <footer class="footer">
         <div class="footer-content">
@@ -118,9 +135,7 @@
                 <span class="logo-360">360°</span>
                 <span class="logo-text">Artist Management</span>
             </div>
-            <p class="footer-text">Sharing knowledge to help artists take control of their careers.</p>
-            <div class="footer-divider"></div>
-            <p class="footer-copyright">© 2025 360° Artist Management. All rights reserved.</p>
+            <p class="footer-text">Knowledge shared freely.</p>
         </div>
     </footer>
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualization | 360° Artist Management</title>
+    <title>Visualization | Onboarding | 360° Artist Management</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/articles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
 <body>
     <div class="bg-gradient"></div>
     <div class="noise-overlay"></div>
-    
+
     <nav class="nav">
         <div class="nav-container">
             <a href="../../index.html" class="logo">
@@ -21,61 +21,65 @@
                 <span class="logo-text">Artist Management</span>
             </a>
             <div class="nav-links">
-                <a href="../../modules/onboarding.html" class="nav-link">← Onboarding</a>
-                <a href="../../index.html#modules" class="nav-link">All Topics</a>
+                <a href="../../index.html#modules" class="nav-link">Topics</a>
+                <a href="../../index.html#about" class="nav-link">About</a>
             </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-    <article class="article-page">
-        <header class="article-header">
-            <div class="article-header-container">
-                <nav class="breadcrumb">
-                    <a href="../../index.html">Home</a>
-                    <span>›</span>
-                    <a href="../../modules/onboarding.html">Onboarding</a>
-                    <span>›</span>
-                    <span class="current">Visualization</span>
-                </nav>
-                
-                <div class="article-meta">
-                    <span class="article-topic-badge">Onboarding</span>
-                    <span class="article-number-badge">4 of 14</span>
-                </div>
-                
-                <h1>Visualization</h1>
-                <p class="article-description">Let’s take Nike as an example again. You get a certain feeling when you buy Nikes, but at the same time, you recognize the swoosh because of the logo. That logo represents the brand Nike. How are you...</p>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../../index.html#modules" class="mobile-link">Topics</a>
+        <a href="../../index.html#about" class="mobile-link">About</a>
+    </div>
+
+    <main class="article-page">
+        <div class="article-hero">
+            <div class="breadcrumb">
+                <a href="../../index.html">Home</a>
+                <span>/</span>
+                <a href="../../modules/onboarding.html">Onboarding</a>
+                <span>/</span>
+                <span class="current">Visualization</span>
             </div>
-        </header>
-
-        <main class="article-content">
-            <section class="content-section">
-                <p>Visualization Congratulations! You now know your core values, and that will help you a long way in your career. Now it is time to think about the visualization of your brand. As I told you earlier, a fan needs to get a certain feeling with your band, but they also need to recognize it. That is where visualization comes in.</p>
-<p>Let’s take Nike as an example again. You get a certain feeling when you buy Nikes, but at the same time, you recognize the swoosh because of the logo. That logo represents the brand Nike. How are you going to visualize your brand in images, photos, and videos? When you start thinking about your brand, you also think about your identity. Your identity consists of a few things, such as Artist Name, Logo, Photos, Stage performance, Tone of voice, sound, and online presence. Let’s go ahead with the next chapter.</p>
-            </section>
-        </main>
-
-        <nav class="article-nav">
-            <a href="03-core-values.html" class="article-nav-btn prev">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="15 18 9 12 15 6"/>
-                </svg>
-                <div class="nav-btn-text">
-                    <span class="nav-btn-label">Previous</span>
-                    <span class="nav-btn-title">Core Values</span>
+            <div class="article-hero-content">
+                <div class="module-hero-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12,2 2,7 12,12 22,7"/><polyline points="2,17 12,22 22,17"/><polyline points="2,12 12,17 22,12"/></svg>
                 </div>
-            </a>
-            <a href="05-artist-name.html" class="article-nav-btn next">
-                <div class="nav-btn-text">
-                    <span class="nav-btn-label">Next Article</span>
-                    <span class="nav-btn-title">Artist Name</span>
+                <div class="article-hero-text">
+                    <span class="article-module-tag">Onboarding</span>
+                    <h1>Visualization</h1>
+                    <p class="article-description">Define your goals and create a clear vision for your career.</p>
                 </div>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="9 18 15 12 9 6"/>
-                </svg>
-            </a>
+            </div>
+        </div>
+
+        <article class="article-content">
+            <p class="article-intro">Before you can achieve your goals, you need to see them clearly. Visualization is a powerful tool used by successful artists and athletes alike.</p><h2>Why Visualization Works</h2><p>When you visualize your success in detail, your brain starts to recognize opportunities that align with that vision. It's not magic—it's focus.</p><h2>How to Visualize Your Career</h2><ul class="content-list"><li>Close your eyes and imagine yourself 5 years from now</li><li>What venues are you playing?</li><li>What does your audience look like?</li><li>How does success feel?</li><li>What have you achieved?</li></ul>
+        <div class="callout callout-exercise">
+            <div class="callout-icon">✍️</div>
+            <div class="callout-content">
+                <h4>Exercise</h4>
+                <p>Write a detailed description of your ideal day as a successful artist. Where do you wake up? What do you do? Who do you work with?</p>
+            </div>
+        </div>
+        </article>
+
+        <nav class="article-navigation">
+            <a href="03-core-values.html" class="article-nav-link prev">
+            <span class="nav-direction">Previous</span>
+            <span class="nav-title">Core Values</span>
+        </a>
+            <a href="05-artist-name.html" class="article-nav-link next">
+            <span class="nav-direction">Next</span>
+            <span class="nav-title">Artist Name</span>
+        </a>
         </nav>
-    </article>
+    </main>
 
     <footer class="footer">
         <div class="footer-content">
@@ -83,8 +87,10 @@
                 <span class="logo-360">360°</span>
                 <span class="logo-text">Artist Management</span>
             </div>
-            <p class="footer-copyright">© 2025 360° Artist Management. All rights reserved.</p>
+            <p class="footer-text">Knowledge shared freely.</p>
         </div>
     </footer>
+
+    <script src="../../js/app.js"></script>
 </body>
 </html>

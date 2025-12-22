@@ -34,7 +34,10 @@ logs/
 Course Material PDF/
 
 # Development scripts
-generate-lessons.py
 generate-articles.py
 pdf_content.json
+
+# Source PDFs (content already extracted to HTML)
+# Uncomment if you want to exclude them from git
+# Course Material PDF/
 

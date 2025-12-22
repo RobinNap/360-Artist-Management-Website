@@ -1,0 +1,1720 @@
+{
+  "site": {
+    "title": "360° Artist Management",
+    "tagline": "Knowledge Base",
+    "description": "Everything you need to go from bedroom producer to professional artist."
+  },
+  "modules": {
+    "onboarding": {
+      "title": "Onboarding",
+      "description": "Build your artist identity from the ground up.",
+      "icon": "layers",
+      "articles": [
+        {
+          "slug": "01-welcome",
+          "title": "Welcome",
+          "description": "Your starting point for building a professional music career.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Welcome to the 360° Artist Management knowledge base. This is your comprehensive guide to building a professional music career, created from years of industry experience."
+            },
+            {
+              "type": "text",
+              "text": "This knowledge base covers six essential areas: Onboarding & Branding, Management, Marketing, Bookings, Finance, and Legal. Use it as a reference whenever you need guidance on any aspect of your career."
+            },
+            {
+              "type": "tip",
+              "text": "Create a dedicated folder on your computer to save notes as you go through these materials. Taking notes significantly improves retention."
+            },
+            {
+              "type": "heading",
+              "text": "What You'll Learn"
+            },
+            {
+              "type": "grid",
+              "items": [
+                {"icon": "🎨", "title": "Branding", "text": "Build your identity"},
+                {"icon": "👥", "title": "Management", "text": "Understand fan journeys"},
+                {"icon": "📣", "title": "Marketing", "text": "Promote effectively"},
+                {"icon": "📅", "title": "Bookings", "text": "Get gigs"},
+                {"icon": "💰", "title": "Finance", "text": "Manage money"},
+                {"icon": "📋", "title": "Legal", "text": "Protect yourself"}
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "02-branding",
+          "title": "Branding",
+          "description": "Your brand is your reputation—how people talk about you when you're not there.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Your brand is your reputation. It's how people talk about you when you're not there. What are the first three things that come to mind when someone hears your name?"
+            },
+            {
+              "type": "heading",
+              "text": "What is a Brand?"
+            },
+            {
+              "type": "text",
+              "text": "For artists, your brand is personal—you ARE the brand. It's not just a logo or color palette. It's the complete experience people have when they interact with you."
+            },
+            {
+              "type": "heading",
+              "text": "Brand Recognition in Action"
+            },
+            {
+              "type": "text",
+              "text": "When you mention Deadmau5, people immediately think of the iconic mouse head. When someone talks about Daft Punk, they picture the robot helmets. That instant recognition is the power of branding."
+            },
+            {
+              "type": "example",
+              "title": "Famous Artist Brands",
+              "items": [
+                "Deadmau5 → The mouse head",
+                "Daft Punk → Robot helmets",
+                "Lady Gaga → 'Little Monsters' community",
+                "Justin Bieber → 'Beliebers'"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Why Being Different Works"
+            },
+            {
+              "type": "text",
+              "text": "People have an instinctive need to belong. When you dare to be different, you become attractive to people who want to be part of something unique. Your brand becomes the tribe they want to join."
+            },
+            {
+              "type": "reflection",
+              "title": "Exercise",
+              "text": "Ask three friends: 'What are the first three things you think of when you hear my name?' Write down their answers—these should align with your brand values."
+            }
+          ]
+        },
+        {
+          "slug": "03-core-values",
+          "title": "Core Values",
+          "description": "Discover what makes you stand out from the crowd.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Your core values are the foundation of your brand. They're what you represent as an artist and what makes you different from everyone else."
+            },
+            {
+              "type": "heading",
+              "text": "Discovering Your Uniqueness"
+            },
+            {
+              "type": "text",
+              "text": "Start by observing yourself honestly. What makes you different? What do you care deeply about?"
+            },
+            {
+              "type": "list",
+              "title": "Questions to Ask Yourself",
+              "items": [
+                "What do you do daily that's different from others?",
+                "What hobbies set you apart?",
+                "What are your guilty pleasures?",
+                "Do you have strong opinions you're not afraid to share?",
+                "Is your way of speaking or dressing unique?"
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "Ask people around you for their perspective—they often see things about you that you don't notice yourself."
+            },
+            {
+              "type": "heading",
+              "text": "Building Your Brand House"
+            },
+            {
+              "type": "text",
+              "text": "Once you've identified at least three core values, think of them as pillars that support your entire brand. Every decision you make—from visuals to music to how you interact with fans—should reflect these values."
+            }
+          ]
+        },
+        {
+          "slug": "04-visualization",
+          "title": "Visualization",
+          "description": "Define your goals and create a clear vision for your career.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Before you can achieve your goals, you need to see them clearly. Visualization is a powerful tool used by successful artists and athletes alike."
+            },
+            {
+              "type": "heading",
+              "text": "Why Visualization Works"
+            },
+            {
+              "type": "text",
+              "text": "When you visualize your success in detail, your brain starts to recognize opportunities that align with that vision. It's not magic—it's focus."
+            },
+            {
+              "type": "heading",
+              "text": "How to Visualize Your Career"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Close your eyes and imagine yourself 5 years from now",
+                "What venues are you playing?",
+                "What does your audience look like?",
+                "How does success feel?",
+                "What have you achieved?"
+              ]
+            },
+            {
+              "type": "reflection",
+              "title": "Exercise",
+              "text": "Write a detailed description of your ideal day as a successful artist. Where do you wake up? What do you do? Who do you work with?"
+            }
+          ]
+        },
+        {
+          "slug": "05-artist-name",
+          "title": "Artist Name",
+          "description": "Choose a name that represents your brand and is memorable.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Your artist name is often the first thing people encounter. It should be memorable, represent your brand, and work across all platforms."
+            },
+            {
+              "type": "heading",
+              "text": "What Makes a Good Artist Name?"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Easy to spell and pronounce",
+                "Unique enough to search online",
+                "Available as a domain and social handles",
+                "Represents your brand identity",
+                "Sounds good when announced on stage"
+              ]
+            },
+            {
+              "type": "warning",
+              "text": "Before committing to a name, search it thoroughly. Check social media, streaming platforms, and trademark databases. You don't want legal issues later."
+            },
+            {
+              "type": "heading",
+              "text": "Testing Your Name"
+            },
+            {
+              "type": "text",
+              "text": "Say your potential name out loud. Imagine a festival announcer saying 'Please welcome to the stage...' followed by your name. Does it work?"
+            }
+          ]
+        },
+        {
+          "slug": "06-logo",
+          "title": "Logo",
+          "description": "Create a visual symbol that makes you instantly recognizable.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Your logo is a visual shorthand for your brand. It should be simple enough to recognize at a glance, but distinctive enough to be memorable."
+            },
+            {
+              "type": "heading",
+              "text": "Logo Principles"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Keep it simple—complex logos don't scale well",
+                "Make it work in black and white",
+                "Ensure it's readable at small sizes",
+                "Make it unique to you",
+                "Consider how it looks on merchandise"
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "Your logo doesn't need to explain what you do. Nike's swoosh doesn't show shoes. Apple's logo isn't a computer. Focus on being memorable."
+            },
+            {
+              "type": "heading",
+              "text": "Where to Use Your Logo"
+            },
+            {
+              "type": "text",
+              "text": "Once you have a logo, use it consistently: social media profiles, music artwork, website, merchandise, press materials, and stage visuals."
+            }
+          ]
+        },
+        {
+          "slug": "07-moodboard",
+          "title": "Moodboard",
+          "description": "Develop your visual direction and aesthetic.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "A moodboard is a visual collection that defines the look and feel of your brand. It guides all your visual decisions and keeps everything consistent."
+            },
+            {
+              "type": "heading",
+              "text": "What to Include"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Colors that represent your vibe",
+                "Typography styles you're drawn to",
+                "Photography styles you like",
+                "Textures and patterns",
+                "Reference images from artists you admire"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "How to Create One"
+            },
+            {
+              "type": "text",
+              "text": "Use Pinterest, a physical board, or design software. Collect 15-30 images that feel like 'you'. Look for common themes—those are your visual brand elements."
+            },
+            {
+              "type": "tip",
+              "text": "Share your moodboard with designers, photographers, and anyone creating visuals for you. It ensures everyone is aligned on your aesthetic."
+            }
+          ]
+        },
+        {
+          "slug": "08-press-photos",
+          "title": "Press Photos",
+          "description": "Get professional photos that work across all platforms.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Professional press photos are essential. They're used by promoters, media, and platforms. Bad photos can lose you opportunities before anyone hears your music."
+            },
+            {
+              "type": "heading",
+              "text": "What You Need"
+            },
+            {
+              "type": "list",
+              "items": [
+                "At least 3-5 high-quality horizontal shots",
+                "A few vertical options for Stories/Reels",
+                "Both color and black & white versions",
+                "Different crops (full body, headshot, creative)"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Working with Photographers"
+            },
+            {
+              "type": "text",
+              "text": "Share your moodboard with your photographer before the shoot. Discuss locations, wardrobe, and the mood you want to capture."
+            },
+            {
+              "type": "tip",
+              "text": "Update your press photos regularly. Using the same photos for years makes you look inactive. Aim for new photos at least once a year."
+            }
+          ]
+        },
+        {
+          "slug": "09-biography",
+          "title": "Biography",
+          "description": "Write a compelling story that connects with your audience.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Your biography tells your story. It's used by promoters, journalists, and fans to understand who you are. A good bio creates connection and intrigue."
+            },
+            {
+              "type": "heading",
+              "text": "Three Versions You Need"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Short (50 words): For social media profiles",
+                "Medium (150 words): For event listings and quick references",
+                "Long (300+ words): For press kits and detailed features"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "What to Include"
+            },
+            {
+              "type": "text",
+              "text": "Start with a hook that grabs attention. Include your genre, notable achievements, unique story elements, and what makes you different. End with what you're working on now."
+            },
+            {
+              "type": "warning",
+              "text": "Avoid clichés like 'passionate about music since childhood' or 'genre-defying sound.' Be specific and authentic."
+            }
+          ]
+        },
+        {
+          "slug": "10-stage-performance",
+          "title": "Stage Performance",
+          "description": "Develop your presence and create memorable experiences.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Your stage performance is where your brand comes alive. It's not just about the music—it's the complete experience you create for your audience."
+            },
+            {
+              "type": "heading",
+              "text": "Elements of Stage Presence"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Energy level and movement",
+                "Interaction with the crowd",
+                "Visual elements (lighting, visuals, props)",
+                "Wardrobe that matches your brand",
+                "Set structure and flow"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Practice and Preparation"
+            },
+            {
+              "type": "text",
+              "text": "Great performers make it look effortless, but that comes from practice. Record yourself performing. Watch it back. Identify what works and what doesn't."
+            },
+            {
+              "type": "tip",
+              "text": "Study artists you admire. What do they do between songs? How do they use the stage? What makes their performance memorable?"
+            }
+          ]
+        },
+        {
+          "slug": "11-tone-of-voice",
+          "title": "Tone of Voice",
+          "description": "Define how you communicate with your audience.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Your tone of voice is how you 'speak' as a brand—in captions, interviews, and all communications. It should be consistent and authentic to you."
+            },
+            {
+              "type": "heading",
+              "text": "Defining Your Voice"
+            },
+            {
+              "type": "text",
+              "text": "Are you playful or serious? Mysterious or open? Professional or casual? Your tone should match your brand personality and resonate with your audience."
+            },
+            {
+              "type": "list",
+              "title": "Voice Characteristics to Consider",
+              "items": [
+                "Formal vs. casual",
+                "Serious vs. humorous",
+                "Mysterious vs. transparent",
+                "Professional vs. friendly",
+                "Technical vs. accessible"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Consistency is Key"
+            },
+            {
+              "type": "text",
+              "text": "Once you define your voice, use it everywhere: social media, email newsletters, interviews, and website copy. Inconsistency confuses your audience."
+            }
+          ]
+        },
+        {
+          "slug": "12-your-sound",
+          "title": "Your Sound",
+          "description": "Identify and develop your unique sonic signature.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Your sound is what makes people recognize your music within seconds. It's a combination of production choices, musical preferences, and creative instincts that are uniquely yours."
+            },
+            {
+              "type": "heading",
+              "text": "Finding Your Sound"
+            },
+            {
+              "type": "text",
+              "text": "Your sound often emerges naturally from the intersection of your influences, your skills, and your personality. Don't force it—let it develop."
+            },
+            {
+              "type": "list",
+              "title": "Elements of Your Sonic Identity",
+              "items": [
+                "Tempo ranges you gravitate toward",
+                "Instrument and synth choices",
+                "Production techniques you favor",
+                "Vocal processing styles",
+                "Song structures you prefer"
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "Listen to your last 10 tracks. What elements appear consistently? Those patterns are your emerging sound."
+            }
+          ]
+        },
+        {
+          "slug": "13-online-presence",
+          "title": "Online Presence",
+          "description": "Build and optimize your digital footprint.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Your online presence is often someone's first encounter with you. Every platform should reflect your brand consistently and make it easy for people to find and follow you."
+            },
+            {
+              "type": "heading",
+              "text": "Essential Platforms"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Streaming: Spotify, Apple Music, SoundCloud",
+                "Social: Instagram, TikTok, X (Twitter)",
+                "Video: YouTube",
+                "Professional: Your own website"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Profile Consistency"
+            },
+            {
+              "type": "text",
+              "text": "Use the same profile photo, username, and bio format across platforms. Make it easy for fans to find and recognize you everywhere."
+            },
+            {
+              "type": "tip",
+              "text": "Claim your username on all platforms, even ones you don't use yet. This prevents others from taking it."
+            }
+          ]
+        },
+        {
+          "slug": "14-press-kit",
+          "title": "Press Kit (EPK)",
+          "description": "Create a professional kit that opens doors.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "An Electronic Press Kit (EPK) is your professional portfolio. It contains everything bookers, journalists, and labels need to know about you in one place."
+            },
+            {
+              "type": "heading",
+              "text": "What to Include"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Biography (short, medium, and long versions)",
+                "High-resolution press photos",
+                "Music samples or streaming links",
+                "Notable achievements and press coverage",
+                "Social media statistics",
+                "Contact information",
+                "Technical rider (for bookings)"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Format Options"
+            },
+            {
+              "type": "text",
+              "text": "Create both a downloadable PDF version and a page on your website. The website version can include embedded music and videos."
+            },
+            {
+              "type": "tip",
+              "text": "Keep your EPK updated. Outdated statistics or old press photos make you look inactive."
+            }
+          ]
+        }
+      ]
+    },
+    "management": {
+      "title": "Management",
+      "description": "Understand the artist lifecycle and build your network.",
+      "icon": "users",
+      "articles": [
+        {
+          "slug": "01-artist-dna",
+          "title": "Artist DNA",
+          "description": "Understand what makes you unique as an artist.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Your Artist DNA is the combination of traits, influences, and characteristics that make you uniquely you. Understanding it helps you make authentic decisions about your career."
+            },
+            {
+              "type": "heading",
+              "text": "Components of Artist DNA"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Your musical influences and inspirations",
+                "Your personal story and background",
+                "Your values and what you stand for",
+                "Your strengths and unique skills",
+                "Your goals and ambitions"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Why It Matters"
+            },
+            {
+              "type": "text",
+              "text": "When you understand your DNA, decisions become easier. Should you take this collaboration? Does this venue fit your brand? Your DNA guides these choices."
+            },
+            {
+              "type": "reflection",
+              "title": "Exercise",
+              "text": "Write down 5 artists who influenced you, 5 personal traits that define you, and 5 goals you want to achieve. The patterns that emerge are your DNA."
+            }
+          ]
+        },
+        {
+          "slug": "02-artist-cycle",
+          "title": "The Artist Cycle",
+          "description": "Navigate the different phases of an artist's career.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Every artist career moves through predictable phases. Understanding where you are helps you focus on the right activities for your current stage."
+            },
+            {
+              "type": "heading",
+              "text": "The Phases"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Discovery: Building your sound and identity",
+                "Development: Growing your audience and skills",
+                "Establishment: Consistent releases and regular gigs",
+                "Expansion: Bigger venues, wider reach",
+                "Maturity: Legacy building and mentorship"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Phase-Appropriate Activities"
+            },
+            {
+              "type": "text",
+              "text": "Don't try to do everything at once. In the Discovery phase, focus on your music and brand. In Development, focus on building audience. Match your efforts to your phase."
+            },
+            {
+              "type": "tip",
+              "text": "Be honest about where you are. Trying to act like an established artist when you're still developing can actually slow your progress."
+            }
+          ]
+        },
+        {
+          "slug": "03-fan-journey",
+          "title": "The Fan Journey",
+          "description": "Map how fans discover and engage with you.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Fans don't become superfans overnight. They go through a journey from discovering you to becoming loyal supporters. Understanding this journey helps you nurture relationships."
+            },
+            {
+              "type": "heading",
+              "text": "The Journey Stages"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Awareness: They hear about you for the first time",
+                "Interest: They check out your music",
+                "Engagement: They follow you on social media",
+                "Conversion: They buy tickets, merch, or subscribe",
+                "Loyalty: They actively promote you to others"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Moving Fans Through Stages"
+            },
+            {
+              "type": "text",
+              "text": "Each stage requires different actions. Awareness needs visibility. Interest needs great music. Engagement needs consistent content. Conversion needs calls to action. Loyalty needs community."
+            },
+            {
+              "type": "reflection",
+              "title": "Exercise",
+              "text": "Think about your favorite artist. How did you discover them? What made you become a dedicated fan? Apply those insights to your own strategy."
+            }
+          ]
+        },
+        {
+          "slug": "04-building-network",
+          "title": "Building Your Network",
+          "description": "Connect with the right people in the industry.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "The music industry runs on relationships. Your network can open doors that talent alone cannot. But networking isn't about collecting contacts—it's about building genuine relationships."
+            },
+            {
+              "type": "heading",
+              "text": "Who to Connect With"
+            },
+            {
+              "type": "grid",
+              "items": [
+                {"icon": "🎤", "title": "Other Artists", "text": "Collaboration and support"},
+                {"icon": "📅", "title": "Bookers", "text": "Gig opportunities"},
+                {"icon": "🏷️", "title": "Labels", "text": "Release opportunities"},
+                {"icon": "📰", "title": "Media", "text": "Coverage and exposure"}
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "How to Network Effectively"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Be genuine—people spot fake interest instantly",
+                "Give before you ask—offer value first",
+                "Follow up—a connection without follow-through is worthless",
+                "Stay in touch—regular, meaningful contact builds relationships"
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "Keep a simple spreadsheet of your contacts: name, role, how you met, last contact, and any notes. Review it monthly."
+            },
+            {
+              "type": "download",
+              "title": "Network Tracker Template",
+              "file": "My Network.xlsx",
+              "description": "Track your industry contacts"
+            }
+          ]
+        }
+      ]
+    },
+    "marketing": {
+      "title": "Marketing",
+      "description": "Promote your music and grow your audience.",
+      "icon": "trending-up",
+      "articles": [
+        {
+          "slug": "01-what-is-marketing",
+          "title": "What is Marketing?",
+          "description": "Understand the fundamentals of promoting your music.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Marketing is how you get your music heard. It's not about being 'salesy'—it's about connecting your art with the people who will love it."
+            },
+            {
+              "type": "heading",
+              "text": "Marketing Basics for Artists"
+            },
+            {
+              "type": "text",
+              "text": "At its core, marketing answers: Who is your audience? Where are they? What do they care about? How can you reach them?"
+            },
+            {
+              "type": "heading",
+              "text": "The Marketing Mix"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Product: Your music, brand, and experience",
+                "Place: Where people find you (platforms, venues)",
+                "Promotion: How you spread the word",
+                "Price: What you charge (or don't)"
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "Great marketing feels natural when it comes from genuine enthusiasm for your music and real care for your audience."
+            }
+          ]
+        },
+        {
+          "slug": "02-newsworthiness",
+          "title": "Newsworthiness",
+          "description": "Learn what makes content worth sharing.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Not everything you do is newsworthy, and that's okay. Understanding what makes something worth covering helps you create moments that get attention."
+            },
+            {
+              "type": "heading",
+              "text": "What Makes Something Newsworthy?"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Timeliness: It's happening now",
+                "Significance: It matters to people",
+                "Uniqueness: It's different or first",
+                "Human interest: It connects emotionally",
+                "Relevance: It relates to current trends"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Creating Newsworthy Moments"
+            },
+            {
+              "type": "text",
+              "text": "Plan your releases and announcements around moments that maximize impact. A new track is news. A new track that samples a classic hit is bigger news."
+            }
+          ]
+        },
+        {
+          "slug": "03-reaching-out",
+          "title": "Reaching Out",
+          "description": "Master the art of professional outreach.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Cold outreach is part of the game. Whether you're contacting blogs, playlist curators, or promoters, how you reach out matters as much as what you're offering."
+            },
+            {
+              "type": "heading",
+              "text": "Outreach Principles"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Research first—know who you're contacting",
+                "Keep it short—busy people skim emails",
+                "Be specific—what exactly are you asking for?",
+                "Make it easy—include all needed links",
+                "Follow up once—then move on"
+              ]
+            },
+            {
+              "type": "warning",
+              "text": "Never send mass generic emails. Personalized outreach has dramatically higher success rates."
+            }
+          ]
+        },
+        {
+          "slug": "04-press-release",
+          "title": "Writing a Press Release",
+          "description": "Craft releases that get media attention.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "A press release announces your news in a format journalists can easily use. Done well, it makes their job easier and increases your chances of coverage."
+            },
+            {
+              "type": "heading",
+              "text": "Press Release Structure"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Headline: Clear, compelling, newsworthy",
+                "Lead paragraph: Who, what, when, where, why",
+                "Body: Details, quotes, context",
+                "Boilerplate: Standard 'About' paragraph",
+                "Contact info: How to reach you"
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "Write your headline and lead paragraph first. If those don't grab attention, the rest doesn't matter."
+            }
+          ]
+        },
+        {
+          "slug": "05-newsletter",
+          "title": "Writing a Newsletter",
+          "description": "Build direct relationships with your fans.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Email newsletters let you communicate directly with fans—no algorithm deciding who sees your content. It's one of your most valuable marketing tools."
+            },
+            {
+              "type": "heading",
+              "text": "Newsletter Best Practices"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Be consistent—set a schedule and stick to it",
+                "Provide value—don't just ask for things",
+                "Be personal—write like you're emailing a friend",
+                "Include a clear call to action",
+                "Keep it scannable—use headers and short paragraphs"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Building Your List"
+            },
+            {
+              "type": "text",
+              "text": "Offer something valuable in exchange for email signups: exclusive content, early access, or behind-the-scenes material."
+            }
+          ]
+        },
+        {
+          "slug": "06-storytelling",
+          "title": "Storytelling",
+          "description": "Create deeper connections through narrative.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Great brands tell great stories. Your narrative is what makes people remember you and feel connected to your journey."
+            },
+            {
+              "type": "heading",
+              "text": "Brand Storytelling Examples"
+            },
+            {
+              "type": "text",
+              "text": "The world's biggest brands sell stories, not products:"
+            },
+            {
+              "type": "example",
+              "title": "What Brands Really Sell",
+              "items": [
+                "Nike sells determination, not shoes",
+                "Airbnb sells belonging, not accommodation",
+                "Dove sells confidence, not soap",
+                "Apple sells creativity, not computers"
+              ]
+            },
+            {
+              "type": "image",
+              "src": "Nike.png",
+              "alt": "Nike brand storytelling",
+              "caption": "Nike's 'Just Do It' sells determination, not shoes"
+            },
+            {
+              "type": "heading",
+              "text": "Your Story as an Artist"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Your origin: How did you get into music?",
+                "Your struggles: What obstacles have you overcome?",
+                "Your vision: Where are you heading?",
+                "Your values: What do you stand for?"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "07-creating-content",
+          "title": "Creating Content",
+          "description": "Develop content that engages your audience.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Content keeps you connected with your audience between releases. The good news: you don't need expensive equipment—your smartphone is enough."
+            },
+            {
+              "type": "heading",
+              "text": "Content Ideas"
+            },
+            {
+              "type": "grid",
+              "items": [
+                {"icon": "🎬", "title": "Behind the Scenes", "text": "Studio sessions, soundcheck, touring"},
+                {"icon": "📱", "title": "Day in the Life", "text": "What does your day look like?"},
+                {"icon": "🎵", "title": "Music Previews", "text": "Tease upcoming releases"},
+                {"icon": "💬", "title": "Q&A", "text": "Connect directly with fans"}
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Real Artist Examples"
+            },
+            {
+              "type": "text",
+              "text": "Top artists share authentic moments that feel genuine and personal:"
+            },
+            {
+              "type": "image",
+              "src": "Marshmello after show.png",
+              "alt": "Marshmello backstage",
+              "caption": "Marshmello sharing a moment backstage after a show"
+            },
+            {
+              "type": "image",
+              "src": "Peggy Gou after show.png",
+              "alt": "Peggy Gou after performance",
+              "caption": "Peggy Gou's authentic post-show content"
+            },
+            {
+              "type": "tip",
+              "text": "Consistency beats perfection. Better to post regularly with good content than to wait for the perfect shot."
+            }
+          ]
+        },
+        {
+          "slug": "08-control-content",
+          "title": "Control Your Content",
+          "description": "Manage your content strategy effectively.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Creating content is one thing—managing it effectively is another. A content calendar and clear strategy prevents burnout and ensures consistency."
+            },
+            {
+              "type": "heading",
+              "text": "Content Calendar Basics"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Plan at least 2 weeks ahead",
+                "Mix content types (video, photo, stories)",
+                "Align with your release schedule",
+                "Leave room for spontaneous posts",
+                "Track what performs well"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Batch Creation"
+            },
+            {
+              "type": "text",
+              "text": "Create content in batches rather than day-by-day. Spend one afternoon creating a week's worth of content. This saves time and ensures consistency."
+            },
+            {
+              "type": "download",
+              "title": "Engagement Tracker",
+              "file": "Engagement Insights.xlsx",
+              "description": "Track what content performs best"
+            }
+          ]
+        }
+      ]
+    },
+    "bookings": {
+      "title": "Bookings",
+      "description": "Get gigs at clubs and festivals.",
+      "icon": "calendar",
+      "articles": [
+        {
+          "slug": "01-dj-type",
+          "title": "What Type of DJ Are You?",
+          "description": "Identify your style and find your niche.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Before you can get booked, you need to understand what kind of DJ you are. This determines which venues you target and how you position yourself."
+            },
+            {
+              "type": "heading",
+              "text": "DJ Categories"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Resident DJ: Regular at one venue, building local following",
+                "Touring DJ: Travels for bookings, broader reach",
+                "Producer/DJ: Creates own music, plays own productions",
+                "Open format: Plays across genres for varied crowds",
+                "Specialist: Deep expertise in specific genre"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Finding Your Niche"
+            },
+            {
+              "type": "text",
+              "text": "The riches are in the niches. Being known as the best at something specific is more valuable than being average at everything."
+            }
+          ]
+        },
+        {
+          "slug": "02-find-stage",
+          "title": "Find Your Stage",
+          "description": "Discover venues that match your style.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Not every venue is right for every artist. Finding venues that match your sound and style increases your chances of success and leads to better performances."
+            },
+            {
+              "type": "heading",
+              "text": "Researching Venues"
+            },
+            {
+              "type": "list",
+              "items": [
+                "What genres do they typically book?",
+                "What's the crowd like?",
+                "What size audiences do they draw?",
+                "Who else has played there?",
+                "What's their reputation in the scene?"
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "Visit venues as a guest first. Understand the vibe, the crowd, and the sound before approaching for bookings."
+            }
+          ]
+        },
+        {
+          "slug": "03-booked-club",
+          "title": "Getting Booked at a Club",
+          "description": "Strategies for landing club bookings.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Club bookings are often the foundation of a DJ career. Here's how to approach clubs professionally and increase your chances of getting booked."
+            },
+            {
+              "type": "heading",
+              "text": "The Approach"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Build a relationship first—become a regular",
+                "Network with current residents and staff",
+                "Have your EPK ready before approaching",
+                "Start with off-peak slots if offered",
+                "Prove yourself before asking for more"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "What Bookers Look For"
+            },
+            {
+              "type": "text",
+              "text": "Bookers want artists who draw crowds, are professional to work with, and fit the venue's brand. Demonstrate all three."
+            }
+          ]
+        },
+        {
+          "slug": "04-booked-festival",
+          "title": "Getting Booked at a Festival",
+          "description": "Stand out to festival programmers.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Festival bookings are highly competitive. Programmers receive hundreds of submissions, so standing out requires strategy and patience."
+            },
+            {
+              "type": "heading",
+              "text": "Festival Booking Realities"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Applications open 6-12 months in advance",
+                "Lineup is often decided by relationships and buzz",
+                "Smaller stages are your way in",
+                "Regional festivals are more accessible than flagship events"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Building Festival-Ready Profile"
+            },
+            {
+              "type": "text",
+              "text": "Festivals want artists with momentum. Focus on building buzz through releases, smaller gigs, and social proof before targeting major festivals."
+            }
+          ]
+        },
+        {
+          "slug": "05-write-booker",
+          "title": "How To Write A Booker",
+          "description": "Craft emails that get responses.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Your booking inquiry email is often your first impression. A well-crafted email can open doors; a sloppy one gets deleted."
+            },
+            {
+              "type": "heading",
+              "text": "Email Structure"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Subject: Clear, specific, professional",
+                "Greeting: Use their name if you know it",
+                "Introduction: Who you are, briefly",
+                "Connection: Why their venue specifically",
+                "Ask: What you're looking for",
+                "Links: Music, EPK, socials",
+                "Close: Thank them, provide contact info"
+              ]
+            },
+            {
+              "type": "warning",
+              "text": "Keep it under 200 words. Bookers are busy—if they want more info, they'll click your links."
+            }
+          ]
+        },
+        {
+          "slug": "06-riders",
+          "title": "Build Your Riders",
+          "description": "Create professional technical and hospitality riders.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Riders communicate your requirements to venues. A professional rider ensures you have what you need to perform well."
+            },
+            {
+              "type": "heading",
+              "text": "Technical Rider"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Equipment you need (CDJs, mixer model, etc.)",
+                "Monitor requirements",
+                "Any special equipment you bring",
+                "Stage layout preferences"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Hospitality Rider"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Travel arrangements",
+                "Accommodation needs",
+                "Food and beverage preferences",
+                "Guest list requirements"
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "Keep requirements reasonable for your level. Demanding too much as an emerging artist can hurt your reputation."
+            }
+          ]
+        },
+        {
+          "slug": "07-setlist",
+          "title": "Create a Setlist",
+          "description": "Build sets that take audiences on a journey.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "A great set tells a story. It has structure, flow, and memorable moments. Planning your set—while staying flexible—leads to better performances."
+            },
+            {
+              "type": "heading",
+              "text": "Set Structure"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Opening: Set the mood, read the room",
+                "Build: Gradually increase energy",
+                "Peak: The high-energy moment(s)",
+                "Release: Bring it down briefly",
+                "Finale: End memorably"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Preparation Tips"
+            },
+            {
+              "type": "text",
+              "text": "Prepare more music than you need. Know your tracks well enough to adapt to the crowd's energy."
+            }
+          ]
+        },
+        {
+          "slug": "08-booking-info",
+          "title": "Track Booking Information",
+          "description": "Stay organized and professional.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "As bookings increase, organization becomes essential. Tracking details properly prevents mistakes and maintains your professional reputation."
+            },
+            {
+              "type": "heading",
+              "text": "What to Track"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Venue name and address",
+                "Contact person and details",
+                "Date, time, and set length",
+                "Fee and payment terms",
+                "Travel and accommodation details",
+                "Technical requirements confirmed"
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "Use a simple spreadsheet or booking app. Always confirm details in writing—verbal agreements get forgotten."
+            }
+          ]
+        },
+        {
+          "slug": "09-prepare-performance",
+          "title": "Preparing Your Performance",
+          "description": "Get ready for showtime.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Preparation separates professionals from amateurs. What you do before the gig affects how you perform during it."
+            },
+            {
+              "type": "heading",
+              "text": "Before the Gig"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Confirm all details with the venue",
+                "Prepare and organize your music",
+                "Check all equipment works",
+                "Plan your journey with buffer time",
+                "Rest properly the night before"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Day of the Gig"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Arrive early for soundcheck",
+                "Meet the sound engineer and venue staff",
+                "Test your equipment in the booth",
+                "Check monitor levels",
+                "Relax and focus before going on"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "10-lasting-impression",
+          "title": "Making a Lasting Impression",
+          "description": "Leave every gig with new opportunities.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "How you handle yourself before, during, and after a gig determines whether you get booked again—and recommended to others."
+            },
+            {
+              "type": "heading",
+              "text": "During the Gig"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Be professional with all staff",
+                "Respect your set time exactly",
+                "Read and respond to the crowd",
+                "Keep ego in check",
+                "Deliver the best performance you can"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "After the Gig"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Thank the promoter and venue staff",
+                "Share content from the night",
+                "Follow up within 24-48 hours",
+                "Invoice promptly and professionally",
+                "Stay in touch for future opportunities"
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "The music industry is small. Everyone talks. Your reputation travels faster than your music."
+            }
+          ]
+        }
+      ]
+    },
+    "finance": {
+      "title": "Finance",
+      "description": "Manage your money professionally.",
+      "icon": "dollar-sign",
+      "articles": [
+        {
+          "slug": "01-income-flows",
+          "title": "Flows of Income",
+          "description": "Understand all your potential revenue streams.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Modern artists have more ways to earn money than ever before. Understanding your revenue streams helps you build a sustainable career."
+            },
+            {
+              "type": "heading",
+              "text": "Revenue Streams"
+            },
+            {
+              "type": "grid",
+              "items": [
+                {"icon": "🎵", "title": "Streaming", "text": "Spotify, Apple Music, etc."},
+                {"icon": "🎤", "title": "Live Shows", "text": "Gigs and festivals"},
+                {"icon": "📝", "title": "Sync", "text": "Music in media"},
+                {"icon": "👕", "title": "Merchandise", "text": "Branded products"},
+                {"icon": "📀", "title": "Royalties", "text": "Publishing revenue"},
+                {"icon": "🎓", "title": "Teaching", "text": "Lessons and courses"}
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Diversification"
+            },
+            {
+              "type": "text",
+              "text": "Don't rely on a single income source. The most resilient careers have multiple revenue streams that complement each other."
+            },
+            {
+              "type": "download",
+              "title": "Revenue Tracker",
+              "file": "Revenue & Lost Tracker.xlsx",
+              "description": "Track all your income streams"
+            }
+          ]
+        },
+        {
+          "slug": "02-invoicing",
+          "title": "Invoicing",
+          "description": "Create professional invoices and get paid.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Professional invoicing ensures you get paid on time and maintains your business reputation. Treat it seriously from day one."
+            },
+            {
+              "type": "heading",
+              "text": "Invoice Essentials"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Your business name and contact info",
+                "Client details",
+                "Invoice number and date",
+                "Description of services",
+                "Amount due and payment terms",
+                "Payment methods accepted"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Best Practices"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Invoice immediately after the gig",
+                "Set clear payment terms (e.g., 14 days)",
+                "Follow up politely if payment is late",
+                "Keep records of all invoices"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "03-profit-loss",
+          "title": "Calculate Your Profit & Loss",
+          "description": "Track your financial performance.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Understanding your profit and loss tells you whether you're building a sustainable career or just moving money around."
+            },
+            {
+              "type": "heading",
+              "text": "The Formula"
+            },
+            {
+              "type": "text",
+              "text": "Profit = Revenue - Expenses. Simple in theory, but you need to track everything to know your real numbers."
+            },
+            {
+              "type": "heading",
+              "text": "Common Expenses"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Equipment and software",
+                "Marketing and promotion",
+                "Travel and accommodation",
+                "Studio time",
+                "Professional services"
+              ]
+            },
+            {
+              "type": "download",
+              "title": "Expense Tracker",
+              "file": "Document All Expenses.xlsx",
+              "description": "Track every expense properly"
+            },
+            {
+              "type": "tip",
+              "text": "Keep all receipts. You'll need them for taxes and accurate tracking."
+            }
+          ]
+        },
+        {
+          "slug": "04-budgeting",
+          "title": "Budgeting",
+          "description": "Plan your spending for sustainable growth.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "A budget is your financial roadmap. Without one, you're navigating your career blindly."
+            },
+            {
+              "type": "heading",
+              "text": "Why Budget?"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Understand your cash flow",
+                "Plan investments wisely",
+                "Save for slow periods",
+                "Make informed decisions"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Budget Categories"
+            },
+            {
+              "type": "text",
+              "text": "Divide your income: essentials (rent, bills), career investment (equipment, marketing), savings, and personal spending."
+            },
+            {
+              "type": "download",
+              "title": "Budget Template",
+              "file": "Budgeting Example Sheet.xlsx",
+              "description": "Start tracking your finances"
+            },
+            {
+              "type": "tip",
+              "text": "Review your budget monthly. Your financial situation changes, and your budget should adapt with it."
+            }
+          ]
+        },
+        {
+          "slug": "05-royalties",
+          "title": "Royalties",
+          "description": "Understand how music royalties work.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Royalties are payments you receive when your music is used. Understanding the different types ensures you collect everything you're owed."
+            },
+            {
+              "type": "heading",
+              "text": "Types of Royalties"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Mechanical: From reproductions (streaming, downloads)",
+                "Performance: From public plays (radio, venues)",
+                "Sync: From use in video/film",
+                "Master: From use of your recordings"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Collecting Your Royalties"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Register with a PRO (ASCAP, BMI, PRS, etc.)",
+                "Register with a publishing administrator",
+                "Register your songs properly",
+                "Keep your catalog data accurate"
+              ]
+            },
+            {
+              "type": "warning",
+              "text": "Many artists leave money on the table by not registering their works properly. Set this up correctly from the start."
+            }
+          ]
+        }
+      ]
+    },
+    "legal": {
+      "title": "Legal",
+      "description": "Protect yourself with proper contracts.",
+      "icon": "file-text",
+      "articles": [
+        {
+          "slug": "01-record-deal",
+          "title": "Signing a Record Deal",
+          "description": "Navigate record deal negotiations.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "A record deal can accelerate your career—or trap you in a bad contract for years. Understanding what you're signing is crucial."
+            },
+            {
+              "type": "heading",
+              "text": "Types of Deals"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Traditional: Label funds everything, owns masters",
+                "Distribution: You fund, they distribute",
+                "Licensing: You license for a period, retain ownership",
+                "360 Deal: Label takes percentage of all income"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Key Terms to Understand"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Advance: Upfront payment (it's a loan!)",
+                "Royalty rate: Your percentage",
+                "Term: Contract duration",
+                "Territory: Where it applies",
+                "Options: Label's right to extend"
+              ]
+            },
+            {
+              "type": "warning",
+              "text": "ALWAYS have a lawyer review any contract before signing. The cost is nothing compared to a bad deal."
+            }
+          ]
+        },
+        {
+          "slug": "02-management-agreement",
+          "title": "Signing a Management Agreement",
+          "description": "Evaluate contracts and protect yourself.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "A manager can be incredibly valuable, but the wrong deal can cost you dearly. Understand what you're agreeing to."
+            },
+            {
+              "type": "heading",
+              "text": "What Managers Do"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Career strategy and planning",
+                "Booking and deal negotiation",
+                "Day-to-day business management",
+                "Industry relationship building",
+                "Team coordination"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Contract Considerations"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Commission rate (typically 15-20%)",
+                "What income they commission",
+                "Term length and exit clauses",
+                "Sunset clauses (post-term commissions)",
+                "Scope of authority"
+              ]
+            },
+            {
+              "type": "tip",
+              "text": "Meet multiple managers before deciding. The relationship matters as much as the terms."
+            }
+          ]
+        },
+        {
+          "slug": "03-music-rights",
+          "title": "Basic Music Rights",
+          "description": "Understand copyright and publishing.",
+          "content": [
+            {
+              "type": "intro",
+              "text": "Understanding music rights protects your work and ensures you get paid. There are two main copyrights in every recording."
+            },
+            {
+              "type": "heading",
+              "text": "The Two Copyrights"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Composition: The song itself (lyrics, melody)",
+                "Master: The specific recording of that song"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Who Owns What"
+            },
+            {
+              "type": "text",
+              "text": "As an independent artist, you likely own both. When you sign deals, you may transfer or license some rights. Know what you're giving up."
+            },
+            {
+              "type": "heading",
+              "text": "Protecting Your Rights"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Copyright exists automatically when you create",
+                "Registration provides legal benefits",
+                "Document collaborations in writing",
+                "Never sign without understanding"
+              ]
+            },
+            {
+              "type": "download",
+              "title": "Booking Agreement Example",
+              "file": "Booking Agreement Example.pdf",
+              "description": "See what a basic contract looks like"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
+

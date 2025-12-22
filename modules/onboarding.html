@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Satoshi:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body data-module="onboarding">
+<body>
     <div class="bg-gradient"></div>
     <div class="noise-overlay"></div>
-    
+
     <nav class="nav">
         <div class="nav-container">
             <a href="../index.html" class="logo">
@@ -20,177 +20,231 @@
                 <span class="logo-text">Artist Management</span>
             </a>
             <div class="nav-links">
-                <a href="../index.html#modules" class="nav-link">All Topics</a>
+                <a href="../index.html#modules" class="nav-link">Topics</a>
+                <a href="../index.html#about" class="nav-link">About</a>
             </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
-    <div class="module-page">
-        <section class="module-hero">
-            <nav class="breadcrumb">
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="../index.html#modules" class="mobile-link">Topics</a>
+        <a href="../index.html#about" class="mobile-link">About</a>
+    </div>
+
+    <main class="module-page">
+        <div class="module-hero">
+            <div class="breadcrumb">
                 <a href="../index.html">Home</a>
-                <span>›</span>
+                <span>/</span>
                 <span class="current">Onboarding</span>
-            </nav>
-            
+            </div>
             <div class="module-hero-content">
                 <div class="module-hero-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                    </svg>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12,2 2,7 12,12 22,7"/><polyline points="2,17 12,22 22,17"/><polyline points="2,12 12,17 22,12"/></svg>
                 </div>
                 <div class="module-hero-text">
                     <h1>Onboarding</h1>
-                    <p>Build your artist identity from the ground up. Define your brand, create your visual identity, and craft your unique sound.</p>
+                    <p>Build your artist identity from the ground up.</p>
+                    <div class="module-stats">
+                        <span>14 articles</span>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <section class="lessons-section">
-            <h2 class="section-title" style="margin-bottom: 2rem;">Articles</h2>
-            
             <div class="lessons-grid">
-                <a href="../lessons/onboarding/01-welcome.html" class="lesson-card">
-                    <span class="lesson-number">01</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Welcome</h3>
-                        <p class="lesson-desc">Start your journey to becoming a professional artist</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/onboarding/02-branding.html" class="lesson-card">
-                    <span class="lesson-number">02</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Branding</h3>
-                        <p class="lesson-desc">Create a cohesive, memorable artist identity</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/onboarding/03-core-values.html" class="lesson-card">
-                    <span class="lesson-number">03</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Core Values</h3>
-                        <p class="lesson-desc">Define the beliefs that guide your career</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/onboarding/04-visualization.html" class="lesson-card">
-                    <span class="lesson-number">04</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Visualization</h3>
-                        <p class="lesson-desc">Clarify your goals and manifest your ideal career</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/onboarding/05-artist-name.html" class="lesson-card">
-                    <span class="lesson-number">05</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Artist Name</h3>
-                        <p class="lesson-desc">Choose a name that represents your brand</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/onboarding/06-logo.html" class="lesson-card">
-                    <span class="lesson-number">06</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Logo</h3>
-                        <p class="lesson-desc">Create a visual symbol for your brand</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/onboarding/07-moodboard.html" class="lesson-card">
-                    <span class="lesson-number">07</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Moodboard</h3>
-                        <p class="lesson-desc">Develop your visual direction and style</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/onboarding/08-press-photos.html" class="lesson-card">
-                    <span class="lesson-number">08</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Press Photos</h3>
-                        <p class="lesson-desc">Get professional photos that work everywhere</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/onboarding/09-biography.html" class="lesson-card">
-                    <span class="lesson-number">09</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Biography</h3>
-                        <p class="lesson-desc">Craft a compelling story about yourself</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/onboarding/10-stage-performance.html" class="lesson-card">
-                    <span class="lesson-number">10</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Stage Performance</h3>
-                        <p class="lesson-desc">Develop your live presence</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/onboarding/11-tone-of-voice.html" class="lesson-card">
-                    <span class="lesson-number">11</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Tone of Voice</h3>
-                        <p class="lesson-desc">Define how you communicate with your audience</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/onboarding/12-your-sound.html" class="lesson-card">
-                    <span class="lesson-number">12</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Your Sound</h3>
-                        <p class="lesson-desc">Identify your unique sonic elements</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/onboarding/13-online-presence.html" class="lesson-card">
-                    <span class="lesson-number">13</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Online Presence</h3>
-                        <p class="lesson-desc">Build your digital footprint</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
-
-                <a href="../lessons/onboarding/14-press-kit.html" class="lesson-card">
-                    <span class="lesson-number">14</span>
-                    <div class="lesson-info">
-                        <h3 class="lesson-title">Press Kit (EPK)</h3>
-                        <p class="lesson-desc">Create a professional Electronic Press Kit</p>
-                    </div>
-                    <span class="lesson-action">Read →</span>
-                </a>
+                
+        <a href="../lessons/onboarding/01-welcome.html" class="lesson-card">
+            <div class="lesson-number">01</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Welcome</div>
+                <div class="lesson-type">Your starting point for building a professional music career.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/onboarding/02-branding.html" class="lesson-card">
+            <div class="lesson-number">02</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Branding</div>
+                <div class="lesson-type">Your brand is your reputation—how people talk about you when you're not there.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/onboarding/03-core-values.html" class="lesson-card">
+            <div class="lesson-number">03</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Core Values</div>
+                <div class="lesson-type">Discover what makes you stand out from the crowd.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/onboarding/04-visualization.html" class="lesson-card">
+            <div class="lesson-number">04</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Visualization</div>
+                <div class="lesson-type">Define your goals and create a clear vision for your career.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/onboarding/05-artist-name.html" class="lesson-card">
+            <div class="lesson-number">05</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Artist Name</div>
+                <div class="lesson-type">Choose a name that represents your brand and is memorable.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/onboarding/06-logo.html" class="lesson-card">
+            <div class="lesson-number">06</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Logo</div>
+                <div class="lesson-type">Create a visual symbol that makes you instantly recognizable.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/onboarding/07-moodboard.html" class="lesson-card">
+            <div class="lesson-number">07</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Moodboard</div>
+                <div class="lesson-type">Develop your visual direction and aesthetic.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/onboarding/08-press-photos.html" class="lesson-card">
+            <div class="lesson-number">08</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Press Photos</div>
+                <div class="lesson-type">Get professional photos that work across all platforms.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/onboarding/09-biography.html" class="lesson-card">
+            <div class="lesson-number">09</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Biography</div>
+                <div class="lesson-type">Write a compelling story that connects with your audience.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/onboarding/10-stage-performance.html" class="lesson-card">
+            <div class="lesson-number">10</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Stage Performance</div>
+                <div class="lesson-type">Develop your presence and create memorable experiences.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/onboarding/11-tone-of-voice.html" class="lesson-card">
+            <div class="lesson-number">11</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Tone of Voice</div>
+                <div class="lesson-type">Define how you communicate with your audience.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/onboarding/12-your-sound.html" class="lesson-card">
+            <div class="lesson-number">12</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Your Sound</div>
+                <div class="lesson-type">Identify and develop your unique sonic signature.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/onboarding/13-online-presence.html" class="lesson-card">
+            <div class="lesson-number">13</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Online Presence</div>
+                <div class="lesson-type">Build and optimize your digital footprint.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+        <a href="../lessons/onboarding/14-press-kit.html" class="lesson-card">
+            <div class="lesson-number">14</div>
+            <div class="lesson-info">
+                <div class="lesson-title">Press Kit (EPK)</div>
+                <div class="lesson-type">Create a professional kit that opens doors.</div>
+            </div>
+            <div class="lesson-action">
+                Read
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
             </div>
         </section>
-
-        <section class="cta-section">
-            <div class="cta-content">
-                <h2>Next Topic: Management →</h2>
-                <p>Learn how to manage your artist career and build your network.</p>
-                <a href="management.html" class="btn btn-primary btn-large">
-                    Continue Reading
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </a>
-            </div>
-        </section>
-    </div>
+    </main>
 
     <footer class="footer">
         <div class="footer-content">
@@ -198,9 +252,7 @@
                 <span class="logo-360">360°</span>
                 <span class="logo-text">Artist Management</span>
             </div>
-            <p class="footer-text">Sharing knowledge to help artists take control of their careers.</p>
-            <div class="footer-divider"></div>
-            <p class="footer-copyright">© 2025 360° Artist Management. All rights reserved.</p>
+            <p class="footer-text">Knowledge shared freely.</p>
         </div>
     </footer>
 
