@@ -35,4 +35,6 @@ Course Material PDF/
 
 # Development scripts
 generate-lessons.py
+generate-articles.py
+pdf_content.json
 
