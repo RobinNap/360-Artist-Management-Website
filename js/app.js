@@ -242,5 +242,26 @@ document.addEventListener('DOMContentLoaded', () => {
     // Measure on load and resize
     measureOverflow();
     window.addEventListener('resize', measureOverflow);
+    
+    // Actively prevent horizontal scrolling
+    let lastScrollY = window.scrollY;
+    const preventHorizontalScroll = () => {
+        if (window.scrollX !== 0) {
+            window.scrollTo(0, lastScrollY);
+            fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:248',message:'Horizontal scroll prevented',data:{scrollX:window.scrollX,scrollY:window.scrollY},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'G'})}).catch(()=>{});
+        } else {
+            lastScrollY = window.scrollY;
+        }
+    };
+    
+    // Prevent horizontal scroll on scroll events
+    window.addEventListener('scroll', preventHorizontalScroll, { passive: true });
+    
+    // Prevent horizontal scroll on wheel events
+    window.addEventListener('wheel', (e) => {
+        if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
+            e.preventDefault();
+        }
+    }, { passive: false });
     // #endregion
 });
