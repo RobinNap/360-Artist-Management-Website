@@ -1,0 +1,50 @@
+# Git files
+.git/
+.gitignore
+
+# Development files
+generate.py
+*.py
+*.pyc
+__pycache__/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node (if you add build tools later)
+node_modules/
+npm-debug.log
+package-lock.json
+yarn.lock
+
+# Build output (if any)
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# Course PDF source files (not needed for deployment)
+Course Material PDF/
+
+# Development scripts
+pdf_content.json
+

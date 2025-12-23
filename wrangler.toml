@@ -1,12 +1,13 @@
 # Cloudflare Pages Configuration
 # This file is optional but can be useful for advanced configuration
 
-name = "360-artist-management"
+name = "360-artist-management-website"
 compatibility_date = "2024-01-01"
 
 # Static assets configuration for deploying a static site
 [assets]
 directory = "./"
+# Files matching patterns in .wranglerignore will be excluded
 
 
 
