@@ -5,9 +5,9 @@
 // - Upload files to your R2 bucket (e.g., "360-artist-assets")
 // - Access via: https://yourdomain.com/r2/path/to/file.pdf
 //
-// Make sure to bind your R2 bucket in wrangler.toml as "ASSETS"
+// Make sure to bind your R2 bucket in wrangler.toml as "R2_ASSETS"
 
-export const onRequest: PagesFunction<{ ASSETS: R2Bucket }> = async (context) => {
+export const onRequest: PagesFunction<{ R2_ASSETS: R2Bucket }> = async (context) => {
   const { request, env } = context;
   const url = new URL(request.url);
   
@@ -20,7 +20,7 @@ export const onRequest: PagesFunction<{ ASSETS: R2Bucket }> = async (context) =>
 
   try {
     // Get the file from R2
-    const object = await env.ASSETS.get(path);
+    const object = await env.R2_ASSETS.get(path);
     
     if (!object) {
       return new Response('File not found', { status: 404 });

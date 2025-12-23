@@ -7,7 +7,7 @@
 // - Access via: https://yourdomain.com/downloads/filename.pdf
 // - Files will be downloaded instead of displayed in browser
 
-export const onRequest: PagesFunction<{ ASSETS: R2Bucket }> = async (context) => {
+export const onRequest: PagesFunction<{ R2_ASSETS: R2Bucket }> = async (context) => {
   const { request, env } = context;
   const url = new URL(request.url);
   
@@ -20,7 +20,7 @@ export const onRequest: PagesFunction<{ ASSETS: R2Bucket }> = async (context) =>
 
   try {
     // Get the file from R2
-    const object = await env.ASSETS.get(`downloads/${path}`);
+    const object = await env.R2_ASSETS.get(`downloads/${path}`);
     
     if (!object) {
       return new Response('File not found', { status: 404 });

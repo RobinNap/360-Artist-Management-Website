@@ -9,8 +9,9 @@ pages_build_output_dir = "./"  # Directory containing static files to deploy
 # R2 Bucket Configuration
 # Create buckets in Cloudflare Dashboard: R2 > Create bucket
 # Then bind them here to access from Workers/Pages Functions
+# Note: "ASSETS" is reserved in Pages, so we use "R2_ASSETS" instead
 [[r2_buckets]]
-binding = "ASSETS"  # Name to use in your Worker code
+binding = "R2_ASSETS"  # Name to use in your Worker code
 bucket_name = "360-artist-assets"  # Your R2 bucket name
 
 # Optional: Add more buckets for different file types
