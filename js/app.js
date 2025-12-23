@@ -155,14 +155,17 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // #region agent log
     // Debug: Measure viewport and document dimensions to identify overflow
-    const measureOverflow = () => {
+    const measureOverflow = (eventType = 'check') => {
         const viewportWidth = window.innerWidth;
         const documentWidth = document.documentElement.scrollWidth;
         const bodyWidth = document.body.scrollWidth;
         const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
         const hasOverflow = documentWidth > viewportWidth;
+        const devicePixelRatio = window.devicePixelRatio;
+        const visualViewportWidth = window.visualViewport ? window.visualViewport.width : viewportWidth;
+        const visualViewportScale = window.visualViewport ? window.visualViewport.scale : 1;
         
-        fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:156',message:'Viewport dimensions',data:{viewportWidth,documentWidth,bodyWidth,scrollLeft,hasOverflow},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'A'})}).catch(()=>{});
+        fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:156',message:'Viewport dimensions',data:{eventType,viewportWidth,documentWidth,bodyWidth,scrollLeft,hasOverflow,devicePixelRatio,visualViewportWidth,visualViewportScale},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'A'})}).catch(()=>{});
         
         // Check for elements that might cause overflow
         const allElements = document.querySelectorAll('*');
@@ -264,8 +267,25 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     
     // Measure on load and resize
-    measureOverflow();
-    window.addEventListener('resize', measureOverflow);
+    measureOverflow('initial-load');
+    window.addEventListener('resize', () => measureOverflow('resize'));
+    
+    // Track zoom via visualViewport API (captures pinch-zoom)
+    if (window.visualViewport) {
+        window.visualViewport.addEventListener('resize', () => measureOverflow('visual-viewport-resize'));
+        window.visualViewport.addEventListener('scroll', () => measureOverflow('visual-viewport-scroll'));
+    }
+    
+    // Track zoom via scale changes
+    let lastScale = window.visualViewport ? window.visualViewport.scale : 1;
+    setInterval(() => {
+        const currentScale = window.visualViewport ? window.visualViewport.scale : 1;
+        if (currentScale !== lastScale) {
+            fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:zoom-track',message:'Zoom scale changed',data:{previousScale:lastScale,currentScale,viewportWidth:window.innerWidth,documentWidth:document.documentElement.scrollWidth},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'ZOOM'})}).catch(()=>{});
+            lastScale = currentScale;
+            measureOverflow('zoom-change');
+        }
+    }, 200);
     
     // STANDARD: Actively prevent ALL horizontal scrolling
     const preventHorizontalScroll = () => {
