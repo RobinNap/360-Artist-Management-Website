@@ -267,40 +267,63 @@ document.addEventListener('DOMContentLoaded', () => {
     measureOverflow();
     window.addEventListener('resize', measureOverflow);
     
-    // Actively prevent horizontal scrolling and reset to 0
-    let lastScrollY = window.scrollY;
+    // STANDARD: Actively prevent ALL horizontal scrolling
     const preventHorizontalScroll = () => {
-        if (window.scrollX !== 0 || window.pageXOffset !== 0) {
-            window.scrollTo(0, lastScrollY);
+        if (window.scrollX !== 0 || window.pageXOffset !== 0 || document.documentElement.scrollLeft !== 0 || document.body.scrollLeft !== 0) {
+            window.scrollTo(0, window.scrollY);
             document.documentElement.scrollLeft = 0;
             document.body.scrollLeft = 0;
-            fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:248',message:'Horizontal scroll prevented',data:{scrollX:window.scrollX,pageXOffset:window.pageXOffset,scrollY:window.scrollY},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'G'})}).catch(()=>{});
-        } else {
-            lastScrollY = window.scrollY;
+            if (window.scrollX !== 0) {
+                fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:248',message:'Horizontal scroll prevented',data:{scrollX:window.scrollX,pageXOffset:window.pageXOffset,scrollY:window.scrollY},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'G'})}).catch(()=>{});
+            }
         }
     };
     
     // Prevent horizontal scroll on scroll events
-    window.addEventListener('scroll', preventHorizontalScroll, { passive: true });
+    window.addEventListener('scroll', preventHorizontalScroll, { passive: false });
     
     // Prevent horizontal scroll on wheel events
     window.addEventListener('wheel', (e) => {
         if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
             e.preventDefault();
+            preventHorizontalScroll();
         }
     }, { passive: false });
     
-    // Force reset horizontal scroll on load and resize
-    window.addEventListener('load', () => {
-        window.scrollTo(0, window.scrollY);
-        document.documentElement.scrollLeft = 0;
-        document.body.scrollLeft = 0;
-    });
+    // Prevent horizontal touch scrolling
+    let touchStartX = 0;
+    let touchStartY = 0;
+    document.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+    }, { passive: true });
     
-    window.addEventListener('resize', () => {
+    document.addEventListener('touchmove', (e) => {
+        const touchCurrentX = e.touches[0].clientX;
+        const touchCurrentY = e.touches[0].clientY;
+        const diffX = Math.abs(touchCurrentX - touchStartX);
+        const diffY = Math.abs(touchCurrentY - touchStartY);
+        
+        // If horizontal movement is greater than vertical, prevent it
+        if (diffX > diffY) {
+            e.preventDefault();
+            preventHorizontalScroll();
+        }
+    }, { passive: false });
+    
+    // Force reset horizontal scroll on load, resize, and orientation change
+    const resetHorizontalScroll = () => {
         window.scrollTo(0, window.scrollY);
         document.documentElement.scrollLeft = 0;
         document.body.scrollLeft = 0;
-    });
+        preventHorizontalScroll();
+    };
+    
+    window.addEventListener('load', resetHorizontalScroll);
+    window.addEventListener('resize', resetHorizontalScroll);
+    window.addEventListener('orientationchange', resetHorizontalScroll);
+    
+    // Continuously check and prevent horizontal scroll
+    setInterval(preventHorizontalScroll, 100);
     // #endregion
 });
