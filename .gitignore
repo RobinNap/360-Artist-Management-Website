@@ -30,14 +30,12 @@ build/
 logs/
 *.log
 
-# Course PDF source files (not needed for deployment)
+# Course PDF source files - MOVE TO R2 STORAGE
+# These files are referenced in HTML but should be stored in R2, not in git
+# After moving to R2, update HTML references to use /r2/ or /downloads/ paths
 Course Material PDF/
 
-# Development scripts
+# Development scripts (keep for local development, not needed in deployment)
 generate-articles.py
 pdf_content.json
-
-# Source PDFs (content already extracted to HTML)
-# Uncomment if you want to exclude them from git
-# Course Material PDF/
 

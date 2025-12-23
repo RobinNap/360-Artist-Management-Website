@@ -1,13 +1,31 @@
 # Cloudflare Pages Configuration
-# This file is optional but can be useful for advanced configuration
+# This file is optional for static sites on Cloudflare Pages
+# Pages will automatically detect and deploy your static files
 
 name = "360-artist-management-website"
 compatibility_date = "2024-01-01"
 
-# Static assets configuration for deploying a static site
-[assets]
-directory = "./"
-# Files matching patterns in .wranglerignore will be excluded
+# R2 Bucket Configuration
+# Create buckets in Cloudflare Dashboard: R2 > Create bucket
+# Then bind them here to access from Workers/Pages Functions
+[[r2_buckets]]
+binding = "ASSETS"  # Name to use in your Worker code
+bucket_name = "360-artist-assets"  # Your R2 bucket name
+
+# Optional: Add more buckets for different file types
+# [[r2_buckets]]
+# binding = "PDFS"
+# bucket_name = "360-artist-pdfs"
+
+# Note: For Cloudflare Pages, you don't need [assets] configuration
+# Pages automatically serves files from your repository root
+# Use _headers and _redirects files for Pages-specific configuration
+# 
+# To use R2 with Pages:
+# 1. Create buckets in Cloudflare Dashboard (R2 section)
+# 2. Upload files to R2 buckets
+# 3. Use Pages Functions (functions/ directory) to serve files from R2
+# 4. Or use R2 public URLs if you enable public access
 
 
 
