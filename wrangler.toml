@@ -1,15 +1,18 @@
-# Cloudflare Workers & Pages Configuration (Unified Platform)
-# This configures static asset serving in the unified Workers & Pages platform
-# For Git-connected projects, deployments happen automatically
+# Cloudflare Pages Configuration
+# This project serves static files (HTML, CSS, JS) from the repository root
+# Deployments happen automatically via Git integration
 
 name = "360-artist-management-website"
 compatibility_date = "2025-12-23"
 
-# Static assets configuration for unified platform
-pages_build_output_dir = "./"  # Root directory - all static files are here
+# Pages build output directory - points to root where all static files are located
+pages_build_output_dir = "./"
 
-# Note: In the unified Workers & Pages platform, static files are served automatically
-# from the repository root when Git is connected. No Worker code needed for static sites.
+# Configuration notes:
+# - Static files (index.html, css/, js/, assets/) are served directly
+# - No build step needed - files are deployed as-is from Git
+# - No Worker code needed - Pages serves static files automatically
+# - Custom domain configured separately in Cloudflare Dashboard
 
 
 
