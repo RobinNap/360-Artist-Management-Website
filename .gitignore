@@ -21,10 +21,20 @@ npm-debug.log
 dist/
 build/
 
-# Environment files
+# Environment files and secrets
 .env
 .env.local
 .env.*.local
+*.env
+.envrc
+
+# Credentials and API keys
+*credentials*
+*secrets*
+*.key
+*.pem
+*.p12
+*.pfx
 
 # Logs
 logs/
@@ -38,4 +48,8 @@ Course Material PDF/
 # Development scripts (keep for local development, not needed in deployment)
 generate-articles.py
 pdf_content.json
+
+# Upload scripts (may contain account-specific info - review before committing)
+# upload-to-r2.sh
+# upload-to-r2.js
 

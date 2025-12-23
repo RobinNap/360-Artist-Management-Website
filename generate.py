@@ -73,7 +73,7 @@ def render_content_block(block):
         </div>'''
     
     elif block_type == 'download':
-        file_path = f'../../assets/downloads/{block["file"]}'
+        file_path = f'/downloads/{block["file"]}'
         return f'''
         <div class="download-card">
             <div class="download-icon">
