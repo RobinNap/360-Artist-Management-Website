@@ -169,6 +169,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    width: 100%;
 }
 
 .logo {
@@ -354,6 +355,17 @@ body {
     
     .stat-number {
         font-size: 1.75rem;
+    }
+}
+
+/* Desktop Styles - ensure logo is left-aligned */
+@media (min-width: 769px) {
+    .nav-container {
+        justify-content: flex-start;
+    }
+    
+    .logo {
+        justify-content: flex-start;
     }
 }
 
