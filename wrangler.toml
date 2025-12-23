@@ -4,12 +4,10 @@
 
 name = "360-artist-management-website"
 compatibility_date = "2024-01-01"
+pages_build_output_dir = "./"  # Directory containing static files (root directory)
 
-# Note: R2 bindings and functions are commented out for simplicity
-# Uncomment if you need R2 storage later
-# [[r2_buckets]]
-# binding = "R2_ASSETS"
-# bucket_name = "360-artist-assets"
+# Note: R2 bindings removed - not needed for simple static site
+# If you need R2 later, you can add bindings in Cloudflare Dashboard
 
 
 
