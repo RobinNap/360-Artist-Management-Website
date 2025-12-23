@@ -1,13 +1,16 @@
 # Cloudflare Workers Configuration
-# This Worker serves static files (HTML, CSS, JS) from the repository
+# This Worker serves static files (HTML, CSS, JS) directly from the repository
+# Note: [assets] is for serving static files, NOT R2 storage
 
 name = "360-artist-management-website"
 compatibility_date = "2025-12-23"
 main = "worker.js"
 
-# Static assets configuration - Workers will serve files from this directory
-[site]
-bucket = "./"
+# Static file serving - serves all files from repository root
+# This includes: index.html, css/, js/, assets/, lessons/, modules/, etc.
+[assets]
+directory = "./"
+binding = "ASSETS"
 
 
 
