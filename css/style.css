@@ -64,6 +64,26 @@ section, article, header, footer, main, div[class*="container"], div[class*="sec
     width: 100%;
     overflow-x: hidden;
     box-sizing: border-box;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* Prevent any absolutely positioned element from extending beyond left edge */
+.orbit-5,
+.orbit-6 {
+    left: 0 !important;
+}
+
+/* Hide orbit cards on mobile/tablet to prevent overflow */
+@media (max-width: 1024px) {
+    .orbit-cards {
+        display: none !important;
+    }
+    
+    .orbit-5,
+    .orbit-6 {
+        display: none !important;
+    }
 }
 
 html {
@@ -75,6 +95,9 @@ html {
     width: 100%;
     max-width: 100%;
     position: relative;
+    left: 0;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 @media (max-width: 640px) {
@@ -92,6 +115,10 @@ body {
     width: 100%;
     max-width: 100%;
     position: relative;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    padding-left: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -110,6 +137,7 @@ body {
         radial-gradient(ellipse 50% 30% at 0% 100%, rgba(210, 54, 46, 0.08), transparent);
     pointer-events: none;
     z-index: -2;
+    clip-path: inset(0);
 }
 
 .noise-overlay {
@@ -122,6 +150,7 @@ body {
     pointer-events: none;
     z-index: -1;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    clip-path: inset(0);
 }
 
 /* Navigation */

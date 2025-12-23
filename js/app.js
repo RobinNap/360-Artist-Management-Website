@@ -230,12 +230,36 @@ document.addEventListener('DOMContentLoaded', () => {
         if (bgGradient) {
             const bgRect = bgGradient.getBoundingClientRect();
             const bgStyle = window.getComputedStyle(bgGradient);
-            fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:225',message:'Background gradient dimensions',data:{width:bgRect.width,right:bgRect.right,left:bgRect.left,viewportWidth,computedWidth:bgStyle.width,overflow:bgRect.right > viewportWidth},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'F'})}).catch(()=>{});
+            fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:225',message:'Background gradient dimensions',data:{width:bgRect.width,right:bgRect.right,left:bgRect.left,viewportWidth,computedWidth:bgStyle.width,overflow:bgRect.right > viewportWidth,leftOverflow:bgRect.left < 0},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'F'})}).catch(()=>{});
         }
         if (noiseOverlay) {
             const noiseRect = noiseOverlay.getBoundingClientRect();
             const noiseStyle = window.getComputedStyle(noiseOverlay);
-            fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:231',message:'Noise overlay dimensions',data:{width:noiseRect.width,right:noiseRect.right,left:noiseRect.left,viewportWidth,computedWidth:noiseStyle.width,overflow:noiseRect.right > viewportWidth},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'F'})}).catch(()=>{});
+            fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:231',message:'Noise overlay dimensions',data:{width:noiseRect.width,right:noiseRect.right,left:noiseRect.left,viewportWidth,computedWidth:noiseStyle.width,overflow:noiseRect.right > viewportWidth,leftOverflow:noiseRect.left < 0},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'F'})}).catch(()=>{});
+        }
+        
+        // Check for elements with negative left positioning
+        const allElementsLeft = document.querySelectorAll('*');
+        const leftOverflowElements = [];
+        allElementsLeft.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            const style = window.getComputedStyle(el);
+            if (rect.left < 0) {
+                leftOverflowElements.push({
+                    tag: el.tagName,
+                    class: el.className,
+                    id: el.id,
+                    left: rect.left,
+                    right: rect.right,
+                    position: style.position,
+                    leftValue: style.left,
+                    marginLeft: style.marginLeft
+                });
+            }
+        });
+        
+        if (leftOverflowElements.length > 0) {
+            fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:250',message:'Left overflow elements found',data:{count:leftOverflowElements.length,elements:leftOverflowElements.slice(0,10)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'H'})}).catch(()=>{});
         }
     };
     
@@ -243,12 +267,14 @@ document.addEventListener('DOMContentLoaded', () => {
     measureOverflow();
     window.addEventListener('resize', measureOverflow);
     
-    // Actively prevent horizontal scrolling
+    // Actively prevent horizontal scrolling and reset to 0
     let lastScrollY = window.scrollY;
     const preventHorizontalScroll = () => {
-        if (window.scrollX !== 0) {
+        if (window.scrollX !== 0 || window.pageXOffset !== 0) {
             window.scrollTo(0, lastScrollY);
-            fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:248',message:'Horizontal scroll prevented',data:{scrollX:window.scrollX,scrollY:window.scrollY},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'G'})}).catch(()=>{});
+            document.documentElement.scrollLeft = 0;
+            document.body.scrollLeft = 0;
+            fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:248',message:'Horizontal scroll prevented',data:{scrollX:window.scrollX,pageXOffset:window.pageXOffset,scrollY:window.scrollY},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'G'})}).catch(()=>{});
         } else {
             lastScrollY = window.scrollY;
         }
@@ -263,5 +289,18 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
         }
     }, { passive: false });
+    
+    // Force reset horizontal scroll on load and resize
+    window.addEventListener('load', () => {
+        window.scrollTo(0, window.scrollY);
+        document.documentElement.scrollLeft = 0;
+        document.body.scrollLeft = 0;
+    });
+    
+    window.addEventListener('resize', () => {
+        window.scrollTo(0, window.scrollY);
+        document.documentElement.scrollLeft = 0;
+        document.body.scrollLeft = 0;
+    });
     // #endregion
 });
