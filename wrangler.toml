@@ -4,10 +4,9 @@
 name = "360-artist-management"
 compatibility_date = "2024-01-01"
 
-# For Cloudflare Pages, most configuration is done in the dashboard
-# This file is here for reference and potential future use with Wrangler CLI
-# Note: The [site] configuration is deprecated. For static sites on Cloudflare Pages,
-# you typically don't need this file, or you can use it for Pages Functions if needed.
+# Static assets configuration for deploying a static site
+[assets]
+directory = "./"
 
 
 
