@@ -1,19 +1,13 @@
-# Cloudflare Pages Configuration
-# This project serves static files (HTML, CSS, JS) from the repository root
-# Deployments happen automatically via Git integration
+# Cloudflare Workers Configuration
+# This Worker serves static files (HTML, CSS, JS) from the repository
 
 name = "360-artist-management-website"
 compatibility_date = "2025-12-23"
+main = "worker.js"
 
-# Pages build output directory - points to root where all static files are located
-pages_build_output_dir = "./"
-
-# Configuration notes:
-# - Static files (index.html, css/, js/, assets/) are served directly
-# - No build step needed - files are deployed as-is from Git
-# - No Worker code needed - Pages serves static files automatically
-# - Custom domain configured separately in Cloudflare Dashboard
-# - Last updated: 2025-12-23
+# Static assets configuration - Workers will serve files from this directory
+[site]
+bucket = "./"
 
 
 
