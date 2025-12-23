@@ -1,0 +1,52 @@
+# Exclude Git files and folders (this is the main issue - .git folder is too large)
+.git/
+.gitignore
+.gitattributes
+
+# Exclude large images - these will be hosted externally
+assets/images/Nike.png
+assets/images/Airbnb.png
+assets/images/Dove.png
+assets/images/Selena Gomez Instagram Post.png
+assets/images/National Geographic.png
+assets/images/Peggy Gou after show.png
+assets/images/Marshmello after show.png
+assets/images/Billie Elish Instagram Post.png
+assets/images/Leo Messi Instagram Post.png
+
+# Exclude development/documentation files
+*.md
+*.py
+*.sh
+!wrangler.toml
+
+# Exclude IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Exclude build artifacts
+node_modules/
+dist/
+build/
+
+# Exclude environment files
+.env
+.env.local
+*.env
+
+# Exclude logs
+*.log
+logs/
+
+# Exclude upload scripts
+upload-to-r2.*
+
+# Exclude functions directory (TypeScript files not needed for static assets)
+functions/
+
+# Exclude Course Material PDF folder (not in repo anyway)
+Course Material PDF/
+

@@ -8,6 +8,7 @@ main = "worker.js"
 
 # Static file serving - serves all files from repository root
 # This includes: index.html, css/, js/, assets/, lessons/, modules/, etc.
+# .wranglerignore excludes .git and other unnecessary files
 [assets]
 directory = "./"
 binding = "ASSETS"
