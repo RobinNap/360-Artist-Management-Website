@@ -1159,6 +1159,21 @@ body {
     text-align: left;
 }
 
+.author-signature {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-top: 2rem;
+    margin-bottom: 0;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.about-centered .author-signature {
+    text-align: center;
+}
+
 .about-text {
     color: var(--text-secondary);
     font-size: 1.05rem;
@@ -1313,6 +1328,10 @@ body {
     }
     
     .author-content .about-text {
+        text-align: center;
+    }
+    
+    .author-content .author-signature {
         text-align: center;
     }
 }
