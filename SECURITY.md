@@ -84,3 +84,4 @@ The upload scripts (`upload-to-r2.sh`, `upload-to-r2.js`) now require environmen
 5. ✅ Regularly audit committed files for secrets
 6. ✅ Use tools like `git-secrets` to prevent accidental commits
 
+

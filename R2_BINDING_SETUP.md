@@ -99,3 +99,4 @@ After configuration, test your R2 functions:
 
 - For Cloudflare Pages, the `wrangler.toml` configuration should be sufficient, but dashboard configuration provides a backup and makes it easier to manage.
 
+

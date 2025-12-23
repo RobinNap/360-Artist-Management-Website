@@ -48,3 +48,4 @@ The best approach for Git-connected Pages:
 
 Try **Option 1** first - use `echo "Deploying via Git integration"` as the deploy command. This should satisfy the required field without causing authentication issues.
 
+

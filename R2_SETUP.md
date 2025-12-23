@@ -89,3 +89,4 @@ You can upload files via:
 - **Permission errors**: Verify R2 bucket binding in Pages settings
 - **Slow loading**: Check cache headers in functions
 
+
