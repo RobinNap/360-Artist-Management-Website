@@ -1047,6 +1047,10 @@ body {
         justify-content: center;
     }
     
+    .module-number {
+        display: none;
+    }
+    
     .module-title,
     .module-description {
         text-align: center;
