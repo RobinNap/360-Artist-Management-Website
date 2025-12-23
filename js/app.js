@@ -152,4 +152,81 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
+    
+    // #region agent log
+    // Debug: Measure viewport and document dimensions to identify overflow
+    const measureOverflow = () => {
+        const viewportWidth = window.innerWidth;
+        const documentWidth = document.documentElement.scrollWidth;
+        const bodyWidth = document.body.scrollWidth;
+        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+        const hasOverflow = documentWidth > viewportWidth;
+        
+        fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:156',message:'Viewport dimensions',data:{viewportWidth,documentWidth,bodyWidth,scrollLeft,hasOverflow},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'A'})}).catch(()=>{});
+        
+        // Check for elements that might cause overflow
+        const allElements = document.querySelectorAll('*');
+        const overflowElements = [];
+        allElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            const computedStyle = window.getComputedStyle(el);
+            const width = parseFloat(computedStyle.width);
+            const paddingLeft = parseFloat(computedStyle.paddingLeft);
+            const paddingRight = parseFloat(computedStyle.paddingRight);
+            const marginLeft = parseFloat(computedStyle.marginLeft);
+            const marginRight = parseFloat(computedStyle.marginRight);
+            const totalWidth = width + paddingLeft + paddingRight + marginLeft + marginRight;
+            
+            if (rect.right > viewportWidth || rect.left < 0 || totalWidth > viewportWidth) {
+                overflowElements.push({
+                    tag: el.tagName,
+                    class: el.className,
+                    id: el.id,
+                    right: rect.right,
+                    left: rect.left,
+                    width: totalWidth,
+                    viewportWidth
+                });
+            }
+        });
+        
+        if (overflowElements.length > 0) {
+            fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:180',message:'Overflow elements found',data:{count:overflowElements.length,elements:overflowElements.slice(0,10)},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'B'})}).catch(()=>{});
+        }
+        
+        // Check specific problematic elements
+        const vinylContainer = document.querySelector('.vinyl-container');
+        if (vinylContainer) {
+            const vinylRect = vinylContainer.getBoundingClientRect();
+            const vinylStyle = window.getComputedStyle(vinylContainer);
+            fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:190',message:'Vinyl container dimensions',data:{width:vinylRect.width,right:vinylRect.right,left:vinylRect.left,viewportWidth,overflow:vinylRect.right > viewportWidth},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'C'})}).catch(()=>{});
+        }
+        
+        // Check sections with padding
+        const sections = document.querySelectorAll('section, .hero, .modules-section, .about-section');
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            const style = window.getComputedStyle(section);
+            const paddingLeft = parseFloat(style.paddingLeft);
+            const paddingRight = parseFloat(style.paddingRight);
+            if (rect.right > viewportWidth || paddingLeft + paddingRight > 0) {
+                fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:203',message:'Section padding check',data:{class:section.className,right:rect.right,viewportWidth,paddingLeft,paddingRight,overflow:rect.right > viewportWidth},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'D'})}).catch(()=>{});
+            }
+        });
+        
+        // Check for elements with fixed/absolute positioning
+        const positionedElements = document.querySelectorAll('[style*="position"], .bg-gradient, .noise-overlay, .nav');
+        positionedElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            const style = window.getComputedStyle(el);
+            if (rect.right > viewportWidth || rect.left < 0) {
+                fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:214',message:'Positioned element overflow',data:{class:el.className,position:style.position,right:rect.right,left:rect.left,viewportWidth},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'E'})}).catch(()=>{});
+            }
+        });
+    };
+    
+    // Measure on load and resize
+    measureOverflow();
+    window.addEventListener('resize', measureOverflow);
+    // #endregion
 });
