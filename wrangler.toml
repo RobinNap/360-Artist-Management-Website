@@ -1,13 +1,15 @@
-# Simple Cloudflare Pages Configuration
-# This file is optional - Cloudflare will auto-detect your static files
-# For a simple static site (like GitHub Pages), minimal config is best
+# Cloudflare Workers & Pages Configuration (Unified Platform)
+# This configures static asset serving in the unified Workers & Pages platform
+# For Git-connected projects, deployments happen automatically
 
 name = "360-artist-management-website"
-compatibility_date = "2024-01-01"
-pages_build_output_dir = "./"  # Directory containing static files (root directory)
+compatibility_date = "2025-12-23"
 
-# Note: R2 bindings removed - not needed for simple static site
-# If you need R2 later, you can add bindings in Cloudflare Dashboard
+# Static assets configuration for unified platform
+pages_build_output_dir = "./"  # Root directory - all static files are here
+
+# Note: In the unified Workers & Pages platform, static files are served automatically
+# from the repository root when Git is connected. No Worker code needed for static sites.
 
 
 
