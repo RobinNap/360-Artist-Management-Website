@@ -13,6 +13,7 @@ pages_build_output_dir = "./"
 # - No build step needed - files are deployed as-is from Git
 # - No Worker code needed - Pages serves static files automatically
 # - Custom domain configured separately in Cloudflare Dashboard
+# - Last updated: 2025-12-23
 
 
 
