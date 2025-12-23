@@ -271,31 +271,60 @@
     border: 1px solid var(--border-subtle);
     border-radius: 16px;
     padding: 1.5rem;
+    margin: 2rem 0;
 }
 
 .example-box h4 {
-    font-size: 0.85rem;
+    font-family: var(--font-display);
+    font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: var(--text-muted);
+    color: var(--text-primary);
     margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.example-box p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.example-box p:last-child {
+    margin-bottom: 0;
 }
 
 .example-box ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 1rem 0;
 }
 
 .example-box ul li {
     padding: 0.5rem 0;
-    border-bottom: 1px solid var(--border-subtle);
+    padding-left: 1.5rem;
+    position: relative;
     font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.example-box ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent-primary);
+    font-weight: bold;
 }
 
 .example-box ul li:last-child {
-    border-bottom: none;
     padding-bottom: 0;
+}
+
+.example-box strong {
+    color: var(--text-primary);
+    font-weight: 600;
 }
 
 /* Download Card */
