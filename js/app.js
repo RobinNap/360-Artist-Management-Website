@@ -223,6 +223,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:214',message:'Positioned element overflow',data:{class:el.className,position:style.position,right:rect.right,left:rect.left,viewportWidth},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'E'})}).catch(()=>{});
             }
         });
+        
+        // Specifically check background elements
+        const bgGradient = document.querySelector('.bg-gradient');
+        const noiseOverlay = document.querySelector('.noise-overlay');
+        if (bgGradient) {
+            const bgRect = bgGradient.getBoundingClientRect();
+            const bgStyle = window.getComputedStyle(bgGradient);
+            fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:225',message:'Background gradient dimensions',data:{width:bgRect.width,right:bgRect.right,left:bgRect.left,viewportWidth,computedWidth:bgStyle.width,overflow:bgRect.right > viewportWidth},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'F'})}).catch(()=>{});
+        }
+        if (noiseOverlay) {
+            const noiseRect = noiseOverlay.getBoundingClientRect();
+            const noiseStyle = window.getComputedStyle(noiseOverlay);
+            fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:231',message:'Noise overlay dimensions',data:{width:noiseRect.width,right:noiseRect.right,left:noiseRect.left,viewportWidth,computedWidth:noiseStyle.width,overflow:noiseRect.right > viewportWidth},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'F'})}).catch(()=>{});
+        }
     };
     
     // Measure on load and resize
