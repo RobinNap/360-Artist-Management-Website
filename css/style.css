@@ -69,10 +69,10 @@ img, video, iframe, embed, object, svg {
     height: auto;
 }
 
-/* Hide orbit cards on mobile/tablet to prevent overflow */
+/* Mobile orbit cards adjustments */
 @media (max-width: 1024px) {
     .orbit-cards {
-        display: none;
+        /* Show on mobile but scale down */
     }
 }
 
@@ -617,6 +617,14 @@ body {
     animation: counter-spin 20s linear infinite;
 }
 
+.vinyl-logo {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    animation: counter-spin 20s linear infinite;
+    filter: brightness(0) invert(1);
+}
+
 @keyframes counter-spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(-360deg); }
@@ -748,7 +756,7 @@ body {
     .hero {
         grid-template-columns: 1fr;
         text-align: center;
-        padding: 6rem 1.5rem 3rem;
+        padding: 7rem 1.5rem 3rem;
         min-height: auto;
     }
     
@@ -781,12 +789,13 @@ body {
     .hero-visual { 
         order: 1; 
         margin-bottom: 2rem;
+        padding: 2rem 3rem 0;
     }
     
     .vinyl-container { 
         width: 280px; 
         height: 280px; 
-        margin: 1rem;
+        margin: 2rem auto;
     }
     
     .vinyl-label { 
@@ -798,16 +807,51 @@ body {
         font-size: 1.5rem; 
     }
     
-    /* Hide orbit cards on tablet and mobile */
+    /* Mobile orbit cards - scaled and repositioned */
     .orbit-cards {
-        display: none;
+        display: block;
+    }
+    
+    .orbit-card {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.7rem;
+    }
+    
+    /* Reposition cards for smaller vinyl - moved down to avoid nav overlap */
+    .orbit-1 {
+        top: -5%;
+    }
+    
+    .orbit-2 {
+        top: 10%;
+        right: -18%;
+    }
+    
+    .orbit-3 {
+        top: 50%;
+        right: -22%;
+    }
+    
+    .orbit-4 {
+        bottom: 10%;
+        right: -18%;
+    }
+    
+    .orbit-5 {
+        bottom: 10%;
+        left: -18%;
+    }
+    
+    .orbit-6 {
+        top: 50%;
+        left: -22%;
     }
 }
 
 /* Mobile-specific Hero Adjustments */
 @media (max-width: 640px) {
     .hero {
-        padding: 5rem 1.25rem 2rem;
+        padding: 6rem 1.25rem 2rem;
         text-align: center;
     }
     
@@ -849,19 +893,58 @@ body {
         justify-content: center;
     }
     
+    .hero-visual {
+        padding: 1.5rem 2rem 0;
+    }
+    
     .vinyl-container {
-        width: 240px;
-        height: 240px;
-        margin: 1rem auto;
+        width: 220px;
+        height: 220px;
+        margin: 1.5rem auto;
     }
     
     .vinyl-label {
-        width: 85px;
-        height: 85px;
+        width: 80px;
+        height: 80px;
     }
     
     .vinyl-label span {
         font-size: 1.25rem;
+    }
+    
+    /* Mobile orbit cards - smaller and tighter positioning */
+    .orbit-card {
+        font-size: 0.6rem;
+        padding: 0.3rem 0.5rem;
+    }
+    
+    .orbit-1 {
+        top: -3%;
+    }
+    
+    .orbit-2 {
+        top: 12%;
+        right: -22%;
+    }
+    
+    .orbit-3 {
+        top: 50%;
+        right: -26%;
+    }
+    
+    .orbit-4 {
+        bottom: 12%;
+        right: -22%;
+    }
+    
+    .orbit-5 {
+        bottom: 12%;
+        left: -22%;
+    }
+    
+    .orbit-6 {
+        top: 50%;
+        left: -26%;
     }
 }
 
