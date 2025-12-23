@@ -1,7 +1,11 @@
 # Exclude Git files and folders (this is the main issue - .git folder is too large)
+.git
 .git/
+.git/**
 .gitignore
 .gitattributes
+**/.git/**
+**/.git
 
 # Exclude large images - these will be hosted externally
 assets/images/Nike.png

@@ -45,6 +45,17 @@ logs/
 # After moving to R2, update HTML references to use /r2/ or /downloads/ paths
 Course Material PDF/
 
+# Large images - now hosted on R2, removed from repository
+assets/images/Nike.png
+assets/images/Airbnb.png
+assets/images/Dove.png
+assets/images/Selena Gomez Instagram Post.png
+assets/images/National Geographic.png
+assets/images/Peggy Gou after show.png
+assets/images/Marshmello after show.png
+assets/images/Billie Elish Instagram Post.png
+assets/images/Leo Messi Instagram Post.png
+
 # Development scripts (keep for local development, not needed in deployment)
 generate-articles.py
 pdf_content.json
