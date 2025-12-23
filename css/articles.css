@@ -277,16 +277,30 @@
     flex: 1;
 }
 
+.callout-content h3,
 .callout-content h4 {
     font-family: var(--font-display);
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 .callout-content p {
     margin: 0;
     font-size: 0.95rem;
+}
+
+.callout .callout-content ul,
+.callout .callout-content ol {
+    text-align: left !important;
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.callout .callout-content ul li,
+.callout .callout-content ol li {
+    text-align: left !important;
 }
 
 .callout-tip {
@@ -1140,6 +1154,7 @@
         width: 100%;
     }
     
+    .callout-content h3,
     .callout-content h4 {
         font-size: 0.95rem;
         text-align: center;
@@ -1148,6 +1163,13 @@
     .callout-content p {
         font-size: 0.9rem;
         text-align: center;
+    }
+    
+    .callout .callout-content ul,
+    .callout .callout-content ol,
+    .callout .callout-content ul li,
+    .callout .callout-content ol li {
+        text-align: left !important;
     }
     
     .download-card {
