@@ -1638,6 +1638,16 @@ body {
     line-height: 1.4;
 }
 
+.footer-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.3s var(--ease-smooth);
+}
+
+.footer-link:hover {
+    color: var(--accent-primary);
+}
+
 /* Modal */
 .modal {
     position: fixed;
