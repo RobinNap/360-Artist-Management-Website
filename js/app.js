@@ -276,14 +276,34 @@ document.addEventListener('DOMContentLoaded', () => {
         window.visualViewport.addEventListener('scroll', () => measureOverflow('visual-viewport-scroll'));
     }
     
-    // Track zoom via scale changes
+    // Track zoom via scale changes AND prevent zoom-out below 1.0
     let lastScale = window.visualViewport ? window.visualViewport.scale : 1;
+    
+    const preventZoomOut = () => {
+        if (window.visualViewport && window.visualViewport.scale < 1) {
+            // Zoom out detected - reset to 1.0
+            fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:zoom-prevent',message:'Preventing zoom out',data:{scale:window.visualViewport.scale},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'ZOOM-FIX'})}).catch(()=>{});
+            
+            // Force viewport scale back to 1
+            const viewport = document.querySelector('meta[name="viewport"]');
+            if (viewport) {
+                viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover');
+            }
+        }
+    };
+    
+    // Listen for visual viewport changes (pinch zoom)
+    if (window.visualViewport) {
+        window.visualViewport.addEventListener('resize', preventZoomOut);
+    }
+    
     setInterval(() => {
         const currentScale = window.visualViewport ? window.visualViewport.scale : 1;
         if (currentScale !== lastScale) {
             fetch('http://127.0.0.1:7242/ingest/94ef39dd-ac61-4fbc-b144-204f8904f436',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'app.js:zoom-track',message:'Zoom scale changed',data:{previousScale:lastScale,currentScale,viewportWidth:window.innerWidth,documentWidth:document.documentElement.scrollWidth},timestamp:Date.now(),sessionId:'debug-session',runId:'run1',hypothesisId:'ZOOM'})}).catch(()=>{});
             lastScale = currentScale;
             measureOverflow('zoom-change');
+            preventZoomOut();
         }
     }, 200);
     
